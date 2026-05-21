@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>Contact | VeeLegacy</title><meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="VeeLegacy Financial Services offers insurance planning, travel insurance, family protection, home buying strategies, and wealth education in Canada." />
+<link rel="stylesheet" href="styles.css" /></head>
+<body><header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="VeeLegacy logo" />
+      <span>VeeLegacy</span>
+    </a>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="travel-insurance.html">Travel Insurance</a>
+      <a href="contact.html" class="nav-cta">Book Consultation</a>
+    </div>
+  </nav>
+</header>
+<main class="page">
+<section class="section quote-layout">
+<div>
+<p class="eyebrow">Book Consultation</p>
+<h1>Let’s personalize your financial strategy.</h1>
+<p class="lead">Complete this form and we’ll contact you to schedule a one-on-one consultation.</p>
+</div>
+
+<form class="form" name="consultation-request" method="POST" data-netlify="true">
+<input type="hidden" name="form-name" value="consultation-request" />
+<label>Full Name<input type="text" name="fullName" required /></label>
+<label>Email<input type="email" name="email" required /></label>
+<label>Phone<input type="tel" name="phone" required /></label>
+<label>What do you need help with?
+<select name="interest" required>
+<option value="">Select one</option>
+<option>Life Insurance</option>
+<option>Critical Illness / Disability Insurance</option>
+<option>Travel Insurance</option>
+<option>Home Buying Strategy</option>
+<option>Medical Professional Planning</option>
+<option>Family Wealth / Legacy Planning</option>
+<option>Other</option>
+</select>
+</label>
+<label>Message<textarea name="message" rows="5"></textarea></label>
+<label class="checkbox"><input type="checkbox" name="consent" required /> I consent to be contacted about my request.</label>
+<button class="btn" type="submit">Submit Request</button>
+</form>
+</section>
+</main><footer class="footer">
+  <div>
+    <strong>VeeLegacy Financial Services</strong>
+    <p>Financial education, insurance planning, travel insurance, home buying strategies, and family wealth guidance.</p>
+    <p class="small">This website provides general information only. It is not personalized financial, tax, legal, investment, or insurance advice. Products and eligibility are subject to provider terms, underwriting, and approval.</p>
+  </div>
+  <p>© <span id="year"></span> VeeLegacy Financial Services. All rights reserved.</p>
+</footer>
+<script src="script.js"></script></body></html>

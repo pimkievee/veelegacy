@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="en"><head><title>Travel Insurance Quote | VeeLegacy</title><meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="VeeLegacy Financial Services offers insurance planning, travel insurance, family protection, home buying strategies, and wealth education in Canada." />
-<link rel="stylesheet" href="styles.css" /></head>
-<body><header class="site-header">
+<html lang="en">
+<head>
+  <title>Travel Insurance Quote | VeeLegacy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Request travel insurance support for visitors to Canada, Super Visa insurance, emergency medical travel insurance, students, and families through VeeLegacy Financial Services." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
   <nav class="nav">
     <a class="brand" href="index.html">
-      <img src="assets/logo.png" alt="VeeLegacy logo" />
+      <img src="assets/logo-transparent.png" alt="VeeLegacy logo" />
       <span>VeeLegacy</span>
     </a>
-    <button class="menu-toggle" aria-label="Open menu">☰</button>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -19,82 +24,89 @@
     </div>
   </nav>
 </header>
+
 <main class="page">
-<section class="quote-hero">
-  <div>
-    <p class="eyebrow">Travel Insurance Quote</p>
-    <h1>Get travel insurance support in minutes.</h1>
-    <p class="lead">Complete the form below for visitor to Canada insurance, Super Visa insurance, student travel insurance, or travel coverage outside Canada.</p>
-  </div>
-</section>
+  <section class="quote-hero">
+    <div class="section narrow">
+      <p class="eyebrow">Travel Insurance Quote</p>
+      <h1>Get travel insurance support with a clear next step.</h1>
+      <p class="lead">Complete the form for visitor to Canada insurance, Super Visa insurance, student travel insurance, family travel coverage, or emergency medical travel insurance outside Canada.</p>
+    </div>
+  </section>
 
-<section class="section quote-layout">
-  <div class="quote-info">
-    <h2>Coverage options may include:</h2>
-    <ul>
-      <li>Visitors to Canada insurance</li>
-      <li>Super Visa insurance</li>
-      <li>Emergency medical travel insurance</li>
-      <li>Family travel coverage</li>
-      <li>International student coverage</li>
-      <li>Trip interruption or unexpected medical emergency support</li>
-    </ul>
-    <p class="note"><strong>Important:</strong> This form does not bind coverage. It collects information so we can review eligibility and connect you with the right next step.</p>
-  </div>
-
-  <form class="form quote-form" name="travel-insurance-quote" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="travel-insurance-quote" />
-    <h2>Travel Insurance Quote Request</h2>
-
-    <label>Full Name<input type="text" name="fullName" required /></label>
-    <label>Email<input type="email" name="email" required /></label>
-    <label>Phone Number<input type="tel" name="phone" required /></label>
-
-    <label>Type of Coverage
-      <select name="coverageType" required>
-        <option value="">Select one</option>
-        <option>Visitor to Canada</option>
-        <option>Super Visa Insurance</option>
-        <option>Travelling outside Canada</option>
-        <option>Student Travel Insurance</option>
-        <option>Family Travel Insurance</option>
-      </select>
-    </label>
-
-    <div class="form-two">
-      <label>Traveller Date of Birth<input type="date" name="dateOfBirth" required /></label>
-      <label>Country of Origin<input type="text" name="countryOfOrigin" /></label>
+  <section class="section quote-layout">
+    <div class="quote-info">
+      <h2>Coverage options may include:</h2>
+      <ul>
+        <li>Visitors to Canada insurance</li>
+        <li>Super Visa insurance</li>
+        <li>Emergency medical travel insurance</li>
+        <li>Family travel coverage</li>
+        <li>International student coverage</li>
+        <li>Trip interruption or unexpected medical emergency support</li>
+      </ul>
+      <p class="note"><strong>Important:</strong> This form does not bind coverage. It collects information so we can review eligibility and connect you with the right next step.</p>
     </div>
 
-    <div class="form-two">
-      <label>Travel Start Date<input type="date" name="startDate" required /></label>
-      <label>Travel End Date<input type="date" name="endDate" required /></label>
+    <form class="form quote-form" name="travel-insurance-quote" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="travel-insurance-quote" />
+      <h2>Travel Insurance Quote Request</h2>
+
+      <label>Full Name<input type="text" name="fullName" required /></label>
+      <label>Email<input type="email" name="email" required /></label>
+      <label>Phone Number<input type="tel" name="phone" required /></label>
+
+      <label>Type of Coverage
+        <select name="coverageType" required>
+          <option value="">Select one</option>
+          <option>Visitor to Canada</option>
+          <option>Super Visa Insurance</option>
+          <option>Travelling outside Canada</option>
+          <option>Student Travel Insurance</option>
+          <option>Family Travel Insurance</option>
+        </select>
+      </label>
+
+      <div class="form-two">
+        <label>Traveller Date of Birth<input type="date" name="dateOfBirth" required /></label>
+        <label>Country of Origin<input type="text" name="countryOfOrigin" /></label>
+      </div>
+
+      <div class="form-two">
+        <label>Travel Start Date<input type="date" name="startDate" required /></label>
+        <label>Travel End Date<input type="date" name="endDate" required /></label>
+      </div>
+
+      <label>Destination<input type="text" name="destination" required /></label>
+
+      <label>Any pre-existing medical condition?
+        <select name="medicalCondition">
+          <option value="">Select one</option>
+          <option>No</option>
+          <option>Yes</option>
+          <option>Not sure</option>
+        </select>
+      </label>
+
+      <label>Additional Notes<textarea name="notes" rows="4" placeholder="Tell us anything important about the trip or applicant."></textarea></label>
+
+      <label class="checkbox"><input type="checkbox" name="consent" required /> I consent to be contacted about my travel insurance request.</label>
+
+      <button class="btn" type="submit">Request My Quote</button>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <strong>VeeLegacy Financial Services</strong>
+      <p>Financial education, insurance planning, travel insurance, home buying strategies, and family wealth guidance.</p>
+      <p class="small">This website provides general information only. It is not personalized financial, tax, legal, investment, or insurance advice. Products and eligibility are subject to provider terms, underwriting, and approval.</p>
     </div>
-
-    <label>Destination<input type="text" name="destination" required /></label>
-
-    <label>Any pre-existing medical condition?
-      <select name="medicalCondition">
-        <option value="">Select one</option>
-        <option>No</option>
-        <option>Yes</option>
-        <option>Not sure</option>
-      </select>
-    </label>
-
-    <label>Additional Notes<textarea name="notes" rows="4" placeholder="Tell us anything important about the trip or applicant."></textarea></label>
-
-    <label class="checkbox"><input type="checkbox" name="consent" required /> I consent to be contacted about my travel insurance request.</label>
-
-    <button class="btn" type="submit">Request My Quote</button>
-  </form>
-</section>
-</main><footer class="footer">
-  <div>
-    <strong>VeeLegacy Financial Services</strong>
-    <p>Financial education, insurance planning, travel insurance, home buying strategies, and family wealth guidance.</p>
-    <p class="small">This website provides general information only. It is not personalized financial, tax, legal, investment, or insurance advice. Products and eligibility are subject to provider terms, underwriting, and approval.</p>
+    <p>© <span id="year"></span> VeeLegacy Financial Services. All rights reserved.</p>
   </div>
-  <p>© <span id="year"></span> VeeLegacy Financial Services. All rights reserved.</p>
 </footer>
-<script src="script.js"></script></body></html>
+<script src="script.js"></script>
+</body>
+</html>

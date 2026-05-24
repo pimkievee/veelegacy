@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="en"><head><title>Contact | VeeLegacy</title><meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="VeeLegacy Financial Services offers insurance planning, travel insurance, family protection, home buying strategies, and wealth education in Canada." />
-<link rel="stylesheet" href="styles.css" /></head>
-<body><header class="site-header">
+<html lang="en">
+<head>
+  <title>Contact | VeeLegacy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book a consultation with VeeLegacy Financial Services for insurance planning, travel insurance, home buying strategies, wealth education, and family protection guidance." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
   <nav class="nav">
     <a class="brand" href="index.html">
-      <img src="assets/logo.png" alt="VeeLegacy logo" />
+      <img src="assets/logo-transparent.png" alt="VeeLegacy logo" />
       <span>VeeLegacy</span>
     </a>
-    <button class="menu-toggle" aria-label="Open menu">☰</button>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -19,46 +24,58 @@
     </div>
   </nav>
 </header>
-<main class="page">
-<section class="section quote-layout">
-<div>
-<p class="eyebrow">Book Consultation</p>
-<h1>Let’s personalize your financial strategy.</h1>
-<p class="lead">Complete this form and we’ll contact you to schedule a one-on-one consultation.</p>
-</div>
 
-<form class="form" action="https://formspree.io/f/mojblekj" method="POST">
-<label>Full Name<input type="text" name="fullName" required /></label>
-<label>Email<input type="email" name="email" required /></label>
-<label>Phone<input type="tel" name="phone" required /></label>
-<label>What do you need help with?
-<select name="interest" required>
-  <option value="">Select one</option>
-  <option>Investment & Wealth Building</option>
-  <option>Life Insurance</option>
-  <option>Travel Insurance</option>
-  <option>Home Buying Strategy</option>
-  <option>Medical Professional Planning</option>
-  <option>Estate Planning</option>
-  <option>Corporate Strategies</option>
-  <option>RRSP / TFSA / FHSA Planning</option>
-  <option>Mentorship & Coaching</option>
-  <option>Business Opportunity</option>
-  <option>Kids Wealth Transfer Strategies</option>
-  <option>Other</option>
-</select>
-</label>
-<label>Message<textarea name="message" rows="5"></textarea></label>
-<label class="checkbox"><input type="checkbox" name="consent" required /> I consent to be contacted about my request.</label>
-<button class="btn" type="submit">Submit Request</button>
-</form>
-</section>
-</main><footer class="footer">
-  <div>
-    <strong>VeeLegacy Financial Services</strong>
-    <p>Financial education, insurance planning, travel insurance, home buying strategies, and family wealth guidance.</p>
-    <p class="small">This website provides general information only. It is not personalized financial, tax, legal, investment, or insurance advice. Products and eligibility are subject to provider terms, underwriting, and approval.</p>
+<main class="page">
+  <section class="section quote-layout">
+    <div>
+      <p class="eyebrow">Book Consultation</p>
+      <h1>Let us personalize your financial strategy.</h1>
+      <p class="lead">Complete this form and we will contact you to schedule a one-on-one consultation.</p>
+      <div class="feature-list">
+        <div><strong>Best for:</strong> insurance planning, travel coverage, home buying preparation, and legacy planning.</div>
+        <div><strong>What to expect:</strong> a clear review of your situation before product options are discussed.</div>
+      </div>
+    </div>
+
+    <form class="form" action="https://formspree.io/f/mojblekj" method="POST">
+      <h2>Consultation Request</h2>
+      <label>Full Name<input type="text" name="fullName" required /></label>
+      <label>Email<input type="email" name="email" required /></label>
+      <label>Phone<input type="tel" name="phone" required /></label>
+      <label>What do you need help with?
+        <select name="interest" required>
+          <option value="">Select one</option>
+          <option>Investment & Wealth Building</option>
+          <option>Life Insurance</option>
+          <option>Travel Insurance</option>
+          <option>Home Buying Strategy</option>
+          <option>Medical Professional Planning</option>
+          <option>Estate Planning</option>
+          <option>Corporate Strategies</option>
+          <option>RRSP / TFSA / FHSA Planning</option>
+          <option>Mentorship & Coaching</option>
+          <option>Business Opportunity</option>
+          <option>Kids Wealth Transfer Strategies</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <label>Message<textarea name="message" rows="5"></textarea></label>
+      <label class="checkbox"><input type="checkbox" name="consent" required /> I consent to be contacted about my request.</label>
+      <button class="btn" type="submit">Submit Request</button>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <strong>VeeLegacy Financial Services</strong>
+      <p>Financial education, insurance planning, travel insurance, home buying strategies, and family wealth guidance.</p>
+      <p class="small">This website provides general information only. It is not personalized financial, tax, legal, investment, or insurance advice. Products and eligibility are subject to provider terms, underwriting, and approval.</p>
+    </div>
+    <p>© <span id="year"></span> VeeLegacy Financial Services. All rights reserved.</p>
   </div>
-  <p>© <span id="year"></span> VeeLegacy Financial Services. All rights reserved.</p>
 </footer>
-<script src="script.js"></script></body></html>
+<script src="script.js"></script>
+</body>
+</html>

@@ -29,7 +29,7 @@
 
 <main class="page">
   <section class="section quote-layout">
-    <div>
+    <div class="guidance-info">
       <p class="eyebrow">Financial Guidance</p>
       <h1>Start with a clearer strategy for wealth, protection, and long-term growth.</h1>
       <p class="lead">Complete this form with your contact details, planning topic, and message. VeeLegacy will follow up with the right next step for your goals and planning needs.</p>
@@ -40,7 +40,7 @@
     </div>
 
     <form class="form" action="https://formspree.io/f/mojblekj" method="POST">
-      <h2>Financial Guidance Request</h2>
+      <h2>Financial Guidance <br class="mobile-only-break" />Request</h2>
       <label>Full Name<input type="text" name="fullName" required /></label>
       <label>Email<input type="email" name="email" required /></label>
       <label>Phone<input type="tel" name="phone" required /></label>
@@ -62,7 +62,7 @@
         </select>
       </label>
       <label>Message<textarea name="message" rows="5"></textarea></label>
-      <label class="checkbox"><input type="checkbox" name="consent" required /> I consent to be contacted about my request.</label>
+      <label class="checkbox"><input type="checkbox" name="consent" required /><span>I consent to be contacted.</span></label>
       <button class="btn" type="submit">Submit Guidance Request</button>
     </form>
   </section>

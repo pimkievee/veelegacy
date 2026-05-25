@@ -20,3 +20,28 @@ if (menuToggle && navLinks) {
     });
   });
 }
+
+const revealTargets = document.querySelectorAll(
+  ".section, .stats, .dark-section, .partners-band, .cta, .card, .logo-tile, .form"
+);
+
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.14 }
+  );
+
+  revealTargets.forEach((target) => {
+    target.classList.add("reveal");
+    revealObserver.observe(target);
+  });
+} else {
+  revealTargets.forEach((target) => target.classList.add("in-view"));
+}

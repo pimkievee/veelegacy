@@ -1142,7 +1142,7 @@ textarea:focus {
   .mobile-header-cta {
     min-height: 34px;
     padding: 8px 10px;
-    font-size: 10px;
+    font-size: 11px;
   }
 
   h1 {
@@ -1248,13 +1248,53 @@ textarea:focus {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 520px) {
   .nav {
     gap: 8px;
+    justify-content: flex-start;
+  }
+
+  .brand {
+    flex: 0 0 auto;
   }
 
   .brand span {
     display: none;
+  }
+
+  .mobile-header-cta {
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 430px) {
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    order: 1;
+  }
+
+  .menu-toggle {
+    order: 2;
+    margin-left: auto;
+  }
+
+  .mobile-header-cta {
+    order: 3;
+    margin: 2px auto 0;
+  }
+
+  .nav-links {
+    top: 112px;
+  }
+}
+
+@media (max-width: 340px) {
+  .mobile-header-cta {
+    padding: 8px 9px;
+    font-size: 10px;
   }
 }
 

@@ -454,7 +454,13 @@ h3 {
   margin-top: 34px;
 }
 
+.resource-list-section.reveal {
+  opacity: 1;
+  transform: none;
+}
+
 .resource-card {
+  min-width: 0;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -493,11 +499,13 @@ h3 {
 
 .resource-card h3 {
   padding: 0 24px;
+  overflow-wrap: break-word;
 }
 
 .resource-card p {
   padding: 12px 24px 26px;
   color: var(--muted);
+  overflow-wrap: break-word;
 }
 
 .article-feature {
@@ -1484,6 +1492,45 @@ textarea:focus {
   .resource-hero .section,
   .article-hero .section {
     padding: 52px 0;
+  }
+
+  .resource-hero .section,
+  .resource-list-section {
+    width: calc(100vw - 28px);
+    max-width: calc(100vw - 28px);
+    overflow: hidden;
+  }
+
+  .resource-hero h1,
+  .resource-hero .lead {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .resource-hero h1 {
+    font-size: 27px;
+    line-height: 1.16;
+    text-wrap: balance;
+  }
+
+  .resource-list-section .section-header,
+  .resource-list-section .section-header div,
+  .resource-list-section .section-header h2,
+  .resource-list-section .section-header p,
+  .resource-grid,
+  .resource-card {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .resource-list-section .section-header h2,
+  .resource-list-section .section-header p {
+    overflow-wrap: break-word;
+  }
+
+  .resource-list-section .resource-card.reveal {
+    opacity: 1;
+    transform: none;
   }
 
   .article-layout {

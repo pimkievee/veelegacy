@@ -96,7 +96,7 @@ p {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 18px;
   color: #2d203a;
   font-size: 13px;
   font-weight: 700;
@@ -214,15 +214,15 @@ p {
   display: grid;
   position: relative;
   z-index: 1;
-  grid-template-columns: 1.03fr 0.97fr;
-  gap: 64px;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 54px;
   align-items: center;
-  min-height: 660px;
-  padding: 70px 0 78px;
+  min-height: 600px;
+  padding: 58px 0 66px;
 }
 
 .hero-copy {
-  padding: 34px 0;
+  padding: 24px 0;
   min-width: 0;
 }
 
@@ -268,6 +268,12 @@ h1 {
   line-height: 1.12;
 }
 
+.hero h1 {
+  max-width: 620px;
+  font-size: clamp(34px, 3.45vw, 48px);
+  line-height: 1.08;
+}
+
 h2 {
   max-width: 850px;
   font-size: clamp(28px, 3.5vw, 44px);
@@ -287,11 +293,18 @@ h3 {
   line-height: 1.72;
 }
 
+.hero .lead {
+  max-width: 590px;
+  margin-top: 18px;
+  font-size: clamp(16px, 1.28vw, 18px);
+  line-height: 1.66;
+}
+
 .actions {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  margin-top: 32px;
+  margin-top: 26px;
 }
 
 .hero-visual {
@@ -678,7 +691,7 @@ textarea:focus {
 
 .trusted-partners {
   scroll-margin-top: 92px;
-  padding: 84px 0 78px;
+  padding: 72px 0 70px;
   border-top: 1px solid rgba(234, 216, 228, 0.88);
   background:
     linear-gradient(180deg, rgba(255, 250, 241, 0.98), rgba(255, 240, 245, 0.82)),
@@ -692,23 +705,23 @@ textarea:focus {
 }
 
 .trusted-partners h2 {
-  max-width: 900px;
-  margin: 0 auto 16px;
+  max-width: 760px;
+  margin: 0 auto 12px;
 }
 
 .trusted-partners-copy {
-  max-width: 720px;
+  max-width: 520px;
   margin: 0 auto;
   color: var(--muted);
-  font-size: 17px;
-  line-height: 1.75;
+  font-size: 16px;
+  line-height: 1.65;
 }
 
 .trusted-logo-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
-  margin: 42px auto 0;
+  margin: 36px auto 0;
 }
 
 .trusted-logo-card {
@@ -855,9 +868,10 @@ textarea:focus {
 .footer-contact a,
 .footer-contact span {
   display: grid;
-  grid-template-columns: 34px 1fr;
+  grid-template-columns: 38px 1fr;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  min-height: 42px;
   overflow-wrap: anywhere;
 }
 
@@ -865,8 +879,8 @@ textarea:focus {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 34px;
-  height: 34px;
+  width: 38px;
+  height: 38px;
   border: 1px solid rgba(210, 172, 99, 0.36);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.07);
@@ -890,6 +904,43 @@ textarea:focus {
   border: 1px solid rgba(210, 172, 99, 0.34);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.07);
+}
+
+.social-icons .social-instagram {
+  border-color: rgba(225, 48, 108, 0.42);
+  background:
+    linear-gradient(135deg, rgba(245, 133, 41, 0.14), rgba(221, 42, 123, 0.16), rgba(81, 91, 212, 0.16)),
+    rgba(255, 255, 255, 0.07);
+}
+
+.social-icons .social-instagram svg {
+  color: #e1306c;
+}
+
+.social-icons .social-instagram:hover {
+  border-color: rgba(225, 48, 108, 0.72);
+  background:
+    linear-gradient(135deg, rgba(245, 133, 41, 0.22), rgba(221, 42, 123, 0.24), rgba(81, 91, 212, 0.22)),
+    rgba(255, 255, 255, 0.1);
+}
+
+.social-icons .social-tiktok {
+  border-color: rgba(37, 244, 238, 0.38);
+  background:
+    linear-gradient(135deg, rgba(37, 244, 238, 0.12), rgba(254, 44, 85, 0.15)),
+    rgba(255, 255, 255, 0.07);
+}
+
+.social-icons .social-tiktok svg {
+  color: #25f4ee;
+  filter: drop-shadow(1px 1px 0 rgba(254, 44, 85, 0.95));
+}
+
+.social-icons .social-tiktok:hover {
+  border-color: rgba(254, 44, 85, 0.62);
+  background:
+    linear-gradient(135deg, rgba(37, 244, 238, 0.18), rgba(254, 44, 85, 0.22)),
+    rgba(255, 255, 255, 0.1);
 }
 
 .social-icons a:hover {
@@ -1015,7 +1066,7 @@ textarea:focus {
 
   .hero-inner {
     min-height: auto;
-    padding: 54px 0 72px;
+    padding: 44px 0 58px;
   }
 
   .hero {
@@ -1105,6 +1156,14 @@ textarea:focus {
 
   .hero h1 {
     max-width: 330px;
+    font-size: 25px;
+    line-height: 1.14;
+  }
+
+  .hero .lead {
+    max-width: 330px;
+    font-size: 15px;
+    line-height: 1.58;
   }
 
   .actions {
@@ -1126,7 +1185,7 @@ textarea:focus {
   }
 
   .trusted-partners {
-    padding: 52px 0 48px;
+    padding: 50px 0 46px;
   }
 
   .trusted-partners-inner,

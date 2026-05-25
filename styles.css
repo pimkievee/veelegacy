@@ -318,10 +318,10 @@ h3 {
 
 .trust-card {
   position: absolute;
-  right: 22px;
-  bottom: 22px;
-  width: min(300px, calc(100% - 44px));
-  padding: 20px;
+  right: 24px;
+  bottom: 24px;
+  width: min(280px, calc(100% - 48px));
+  padding: 18px;
   border: 1px solid rgba(210,172,99,0.42);
   border-radius: 8px;
   background: rgba(23, 16, 38, 0.94);
@@ -333,12 +333,14 @@ h3 {
 .trust-card strong {
   display: block;
   margin-bottom: 6px;
-  font-size: 18px;
+  font-size: 17px;
+  line-height: 1.2;
 }
 
 .trust-card span {
   color: #f4e8ef;
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 1.55;
 }
 
 .stats {
@@ -894,6 +896,26 @@ textarea:focus {
   .quote-info {
     position: static;
   }
+
+  .hero-visual {
+    display: grid;
+    gap: 16px;
+  }
+
+  .trust-card {
+    position: static;
+    width: 100%;
+    margin-top: 0;
+    padding: 16px;
+  }
+
+  .trust-card strong {
+    font-size: 16px;
+  }
+
+  .trust-card span {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 620px) {
@@ -951,12 +973,6 @@ textarea:focus {
   .stats {
     width: calc(100% - 28px);
     margin: -24px auto 28px;
-  }
-
-  .trust-card {
-    position: static;
-    width: 100%;
-    margin-top: 14px;
   }
 
   .logo-grid,

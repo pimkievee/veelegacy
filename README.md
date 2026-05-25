@@ -7,6 +7,7 @@ This is a premium static website for VeeLegacy Financial Services, positioned ar
 - About
 - Services
 - Travel Insurance Quote
+- Resources
 - Contact / Consultation
 
 ## SEO Planning

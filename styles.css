@@ -530,6 +530,11 @@ h3 {
   align-items: start;
 }
 
+.article-layout.reveal {
+  opacity: 1;
+  transform: none;
+}
+
 .article-content {
   max-width: 760px;
   min-width: 0;
@@ -615,6 +620,31 @@ h3 {
 .article-related-bottom a {
   color: var(--purple);
   font-weight: 800;
+}
+
+.article-faq {
+  display: grid;
+  gap: 12px;
+  margin: 18px 0 34px;
+}
+
+.article-faq details {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 10px 26px rgba(35, 13, 56, 0.06);
+}
+
+.article-faq summary {
+  cursor: pointer;
+  padding: 18px 20px;
+  color: var(--navy);
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.article-faq p {
+  padding: 0 20px 18px;
 }
 
 .article-aside {

@@ -1569,6 +1569,10 @@ textarea:focus {
     gap: 30px;
   }
 
+  .trusted-logo-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .hero-inner {
     min-height: auto;
     padding: 44px 0 58px;

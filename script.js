@@ -4,6 +4,39 @@ document.querySelectorAll("#year").forEach((year) => {
 
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
+const insuranceDropdown = document.querySelector(".nav-dropdown");
+const insuranceTrigger = document.querySelector(".nav-dropdown-trigger");
+
+if (insuranceDropdown && insuranceTrigger) {
+  insuranceTrigger.setAttribute("aria-haspopup", "true");
+  insuranceTrigger.setAttribute("aria-expanded", "false");
+
+  const closeInsuranceDropdown = () => {
+    insuranceDropdown.classList.remove("open");
+    insuranceTrigger.setAttribute("aria-expanded", "false");
+  };
+
+  insuranceTrigger.addEventListener("click", (event) => {
+    if (window.matchMedia("(min-width: 981px)").matches) {
+      event.preventDefault();
+      const isOpen = insuranceDropdown.classList.toggle("open");
+      insuranceTrigger.setAttribute("aria-expanded", String(isOpen));
+    }
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!insuranceDropdown.contains(event.target)) {
+      closeInsuranceDropdown();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeInsuranceDropdown();
+      insuranceTrigger.blur();
+    }
+  });
+}
 
 if (menuToggle && navLinks) {
   menuToggle.addEventListener("click", () => {
@@ -14,6 +47,7 @@ if (menuToggle && navLinks) {
 
   navLinks.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
+      if (link.classList.contains("nav-dropdown-trigger")) return;
       navLinks.classList.remove("open");
       document.body.classList.remove("nav-open");
       menuToggle.setAttribute("aria-expanded", "false");

@@ -27,6 +27,7 @@ if (insuranceDropdown && insuranceTrigger) {
   document.addEventListener("click", (event) => {
     if (!insuranceDropdown.contains(event.target)) {
       closeInsuranceDropdown();
+      insuranceTrigger.blur();
     }
   });
 

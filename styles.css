@@ -1154,24 +1154,32 @@ textarea:focus {
 .quote-lp-hero {
   overflow: hidden;
   background:
-    linear-gradient(110deg, rgba(14, 7, 24, 0.98) 0%, rgba(50, 16, 79, 0.96) 55%, rgba(239, 190, 210, 0.86) 55%, rgba(255, 250, 241, 0.98) 100%),
+    linear-gradient(135deg, rgba(14, 7, 24, 0.99), rgba(50, 16, 79, 0.97) 64%, rgba(109, 58, 156, 0.72)),
     var(--deep);
   color: var(--white);
 }
 
 .quote-lp-hero-inner {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.86fr);
-  gap: 48px;
-  align-items: center;
+  place-items: center;
   width: min(var(--max), calc(100% - 40px));
-  min-height: 660px;
+  min-height: 310px;
   margin: 0 auto;
-  padding: 70px 0;
+  padding: 42px 0 38px;
 }
 
 .quote-lp-hero-copy {
+  width: min(880px, 100%);
   min-width: 0;
+  text-align: center;
+}
+
+.quote-lp-hero-copy .actions {
+  justify-content: center;
+}
+
+.quote-lp-hero .actions {
+  margin-top: 22px;
 }
 
 .quote-lp-hero h1,
@@ -1182,12 +1190,19 @@ textarea:focus {
 
 .quote-lp-hero h1 {
   max-width: 760px;
-  font-size: clamp(38px, 5vw, 64px);
+  margin-right: auto;
+  margin-left: auto;
+  font-size: clamp(32px, 4vw, 48px);
 }
 
 .quote-lp-hero .lead {
-  max-width: 690px;
+  max-width: 680px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 16px;
   color: #f7e8ef;
+  font-size: clamp(16px, 1.5vw, 18px);
+  line-height: 1.55;
 }
 
 .quote-lp-hero p:not(.lead):not(.eyebrow) {
@@ -1270,13 +1285,14 @@ textarea:focus {
 }
 
 .quote-video-section {
-  padding-bottom: 48px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .video-placeholder {
   display: grid;
   place-items: center;
-  min-height: 430px;
+  min-height: 320px;
   overflow: hidden;
   border: 1px solid rgba(210, 172, 99, 0.38);
   border-radius: 8px;
@@ -1349,7 +1365,7 @@ textarea:focus {
   position: relative;
   display: flex;
   align-items: end;
-  min-height: 430px;
+  min-height: 320px;
   overflow: hidden;
   padding: 24px;
   border: 1px solid rgba(210, 172, 99, 0.38);
@@ -1413,8 +1429,18 @@ textarea:focus {
 
 .family-visual,
 .estate-visual,
-.planning-visual {
+.planning-visual,
+.living-visual {
   background: var(--blush-soft);
+}
+
+.compact-section {
+  padding-top: 46px;
+  padding-bottom: 46px;
+}
+
+.quote-landing h2 {
+  font-size: clamp(25px, 3vw, 38px);
 }
 
 .quote-note {
@@ -1432,6 +1458,17 @@ textarea:focus {
   border-top: 1px solid rgba(234, 216, 228, 0.82);
   border-bottom: 1px solid rgba(234, 216, 228, 0.82);
   background: rgba(255, 255, 255, 0.52);
+}
+
+.quote-landing > .section.soft-band {
+  width: min(var(--max), calc(100% - 40px));
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.quote-landing .reveal {
+  opacity: 1;
+  transform: none;
 }
 
 .quote-card-grid {
@@ -1484,6 +1521,16 @@ textarea:focus {
   color: var(--muted);
 }
 
+.compact-card-grid .quote-info-card {
+  padding: 22px;
+}
+
+.compact-card-grid .quote-info-card > span {
+  min-width: 42px;
+  min-height: 36px;
+  margin-bottom: 12px;
+}
+
 .quote-mini-grid,
 .quote-trust-row,
 .quote-testimonial-row {
@@ -1518,6 +1565,14 @@ textarea:focus {
   color: var(--muted);
   font-size: 14px;
   line-height: 1.5;
+}
+
+.compact-mini-grid {
+  margin-top: 20px;
+}
+
+.compact-mini-grid article {
+  padding: 16px;
 }
 
 .quote-two-columns {
@@ -1590,14 +1645,14 @@ textarea:focus {
 }
 
 .quote-valerie blockquote {
-  margin: 28px 0;
-  padding: 24px;
+  margin: 20px 0;
+  padding: 18px 20px;
   border-left: 5px solid var(--champagne);
   border-radius: 8px;
   background: var(--champagne-soft);
   color: var(--navy);
   font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(26px, 3vw, 38px);
+  font-size: clamp(24px, 2.7vw, 32px);
   line-height: 1.18;
 }
 
@@ -1634,7 +1689,11 @@ textarea:focus {
 }
 
 .quote-process-section {
-  padding-top: 82px;
+  padding-top: 46px;
+}
+
+.compact-trust-list {
+  margin-top: 18px;
 }
 
 .quote-process div {
@@ -2630,7 +2689,7 @@ textarea:focus {
 
   .quote-lp-hero-inner {
     min-height: auto;
-    padding: 54px 0;
+    padding: 38px 0;
   }
 
   .quote-lp-hero-media,
@@ -2703,7 +2762,7 @@ textarea:focus {
 
   .quote-lp-hero-inner {
     gap: 28px;
-    padding: 42px 0 50px;
+    padding: 30px 0 34px;
   }
 
   .quote-lp-hero-copy,
@@ -2715,7 +2774,7 @@ textarea:focus {
 
   .quote-lp-hero h1 {
     max-width: 100%;
-    font-size: 33px;
+    font-size: 28px;
     line-height: 1.12;
     overflow-wrap: break-word;
     text-wrap: balance;
@@ -2731,8 +2790,8 @@ textarea:focus {
   .quote-lp-hero .lead,
   .quote-lp-hero p:not(.lead):not(.eyebrow) {
     max-width: 100%;
-    font-size: 15px;
-    line-height: 1.62;
+    font-size: 14px;
+    line-height: 1.5;
     overflow-wrap: anywhere;
   }
 
@@ -2750,11 +2809,11 @@ textarea:focus {
   }
 
   .quote-video-section {
-    padding-top: 48px;
+    padding-top: 34px;
   }
 
   .video-placeholder {
-    min-height: 320px;
+    min-height: 280px;
   }
 
   .video-placeholder-copy {
@@ -2767,7 +2826,7 @@ textarea:focus {
   }
 
   .quote-visual-card {
-    min-height: 300px;
+    min-height: 260px;
   }
 
   .quote-card-grid.six,
@@ -2790,7 +2849,7 @@ textarea:focus {
 
   .quote-section-header {
     gap: 18px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 
   .quote-section-header.center {
@@ -2799,7 +2858,7 @@ textarea:focus {
   }
 
   .quote-final-cta .section {
-    padding: 54px 0;
+    padding: 42px 0;
   }
 
   .quote-final-cta h2,
@@ -2836,7 +2895,7 @@ textarea:focus {
   }
 
   .quote-lp-hero h1 {
-    font-size: 30px;
+    font-size: 27px;
   }
 
   .quote-lp-hero-media,

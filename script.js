@@ -56,6 +56,26 @@ if (menuToggle && navLinks) {
   });
 }
 
+const quoteIntroVideo = document.querySelector(".quote-intro-video");
+
+if (quoteIntroVideo) {
+  quoteIntroVideo.muted = true;
+
+  const allowManualAudio = () => {
+    quoteIntroVideo.defaultMuted = false;
+    quoteIntroVideo.removeAttribute("muted");
+    quoteIntroVideo.muted = true;
+  };
+
+  const playPromise = quoteIntroVideo.play();
+
+  if (playPromise && typeof playPromise.then === "function") {
+    playPromise.then(allowManualAudio).catch(() => {});
+  } else {
+    quoteIntroVideo.addEventListener("playing", allowManualAudio, { once: true });
+  }
+}
+
 const revealTargets = document.querySelectorAll(
   ".section, .stats, .dark-section, .trusted-partners, .cta, .card, .trusted-logo-card, .form, .resource-card, .article-aside, .article-inline-cta, .article-related-bottom, .local-proof"
 );

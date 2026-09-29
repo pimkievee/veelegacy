@@ -1289,63 +1289,21 @@ textarea:focus {
   padding-bottom: 36px;
 }
 
-.video-placeholder {
-  display: grid;
-  place-items: center;
-  min-height: 320px;
-  overflow: hidden;
+.quote-video-frame {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.quote-intro-video {
+  display: block;
+  width: min(100%, 520px);
+  height: auto;
+  aspect-ratio: 9 / 16;
   border: 1px solid rgba(210, 172, 99, 0.38);
   border-radius: 8px;
-  background:
-    linear-gradient(135deg, rgba(14, 7, 24, 0.74), rgba(50, 16, 79, 0.64)),
-    radial-gradient(circle at 25% 20%, rgba(239, 190, 210, 0.7), transparent 32%),
-    linear-gradient(135deg, var(--champagne-soft), var(--blush-soft));
+  background: #12091d;
   box-shadow: var(--shadow);
-}
-
-.video-placeholder-copy {
-  width: min(620px, calc(100% - 32px));
-  padding: 34px;
-  border: 1px solid rgba(255, 255, 255, 0.34);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.9);
-  text-align: center;
-  box-shadow: var(--shadow);
-}
-
-.play-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 68px;
-  height: 68px;
-  margin-bottom: 18px;
-  border-radius: 999px;
-  background: linear-gradient(135deg, var(--champagne), #f0c7db);
-  box-shadow: 0 16px 34px rgba(35, 13, 56, 0.2);
-}
-
-.play-button::before {
-  width: 0;
-  height: 0;
-  margin-left: 5px;
-  content: "";
-  border-top: 12px solid transparent;
-  border-bottom: 12px solid transparent;
-  border-left: 18px solid var(--navy);
-}
-
-.video-placeholder strong {
-  display: block;
-  color: var(--navy);
-  font-size: clamp(22px, 3vw, 34px);
-  line-height: 1.2;
-}
-
-.video-placeholder p {
-  max-width: 480px;
-  margin: 12px auto 0;
-  color: var(--muted);
 }
 
 .quote-image-split,
@@ -2810,19 +2768,6 @@ textarea:focus {
 
   .quote-video-section {
     padding-top: 34px;
-  }
-
-  .video-placeholder {
-    min-height: 280px;
-  }
-
-  .video-placeholder-copy {
-    padding: 24px 18px;
-  }
-
-  .play-button {
-    width: 58px;
-    height: 58px;
   }
 
   .quote-visual-card {

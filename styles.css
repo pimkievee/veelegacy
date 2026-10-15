@@ -3001,3 +3001,60 @@ textarea:focus {
     transition: none;
   }
 }
+
+
+/* Focused Get a Quote landing page — October 2026 */
+.quote-refresh { background:#fffafc; }
+.quote-refresh .quote-convert-hero { background:linear-gradient(125deg,#1b0c2b 0%,#42205b 65%,#653875 100%); color:#fff; }
+.quote-refresh .quote-convert-inner { max-width:1160px; margin:auto; padding:55px 24px 62px; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,460px); gap:clamp(28px,5vw,76px); align-items:center; }
+.quote-refresh .quote-convert-copy { min-width:0; }
+.quote-refresh .quote-convert-copy .eyebrow { color:#f4c8e2; }
+.quote-refresh .quote-convert-copy h1 { font-size:clamp(35px,4vw,56px); line-height:1.12; letter-spacing:-.025em; color:white; max-width:620px; margin:14px 0 20px; }
+.quote-refresh .quote-convert-copy .lead { color:#f8eaf5; max-width:600px; font-size:clamp(17px,1.6vw,20px); line-height:1.65; }
+.quote-refresh .quote-convert-points { display:grid; gap:10px; margin-top:25px; font-weight:600; color:#fff4fb; }
+.quote-refresh .quote-small-help { margin-top:24px; color:#f3e3f0; font-size:14px; }
+.quote-refresh .quote-small-help a { color:white; text-decoration:underline; text-underline-offset:3px; }
+.quote-refresh #quote-form { scroll-margin-top:90px; }
+.quote-refresh .quote-quick-form { background:#fff; color:#24192e; border-radius:18px; padding:clamp(22px,3vw,35px); box-shadow:0 22px 65px rgba(11,3,21,.28); display:grid; gap:13px; }
+.quote-refresh .quote-quick-form .eyebrow { margin:0; color:#7d4c85; }
+.quote-refresh .quote-quick-form h2 { margin:0; font-size:clamp(24px,2.4vw,31px); color:#25152f; }
+.quote-refresh .quote-form-description { font-size:14px; line-height:1.5; color:#62556a; margin:0 0 4px; }
+.quote-refresh .quote-quick-form label { font-size:13px; font-weight:650; }
+.quote-refresh .quote-quick-form input:not([type="checkbox"]), .quote-refresh .quote-quick-form select { display:block; width:100%; min-width:0; margin-top:6px; padding:11px 12px; border-radius:8px; border:1px solid #dacddf; background:white; color:#26192f; }
+.quote-refresh .quote-quick-form .form-two { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.quote-refresh .quote-quick-form .quote-consent { display:flex; align-items:flex-start; gap:10px; font-weight:400; font-size:12px; line-height:1.5; }
+.quote-refresh .quote-quick-form .quote-consent input { flex-shrink:0; margin-top:3px; }
+.quote-refresh .quote-quick-form .quote-consent a { text-decoration:underline; }
+.quote-refresh .quote-quick-form button { width:100%; border:0; cursor:pointer; }
+.quote-refresh .quote-form-fine-print { color:#756979; font-size:11px; line-height:1.5; margin:0; }
+.quote-refresh .quote-meet-simplified { padding-top:64px; padding-bottom:64px; }
+.quote-refresh .quote-meet-inner { display:grid; grid-template-columns:240px minmax(0,1fr); align-items:center; gap:clamp(26px,5vw,75px); max-width:960px; margin:auto; }
+.quote-refresh .quote-meet-photo { width:100%; height:300px; object-fit:cover; object-position:top; border-radius:16px; box-shadow:0 14px 32px rgba(42,17,57,.11); }
+.quote-refresh .quote-meet-copy h2 { margin:6px 0 14px; }
+.quote-refresh .quote-meet-copy p { line-height:1.7; }
+.quote-refresh .quote-video-details { margin-top:18px; border:1px solid #e8d8e6; border-radius:12px; background:#fff; overflow:hidden; }
+.quote-refresh .quote-video-details summary { padding:15px 18px; font-weight:700; cursor:pointer; color:#4b2463; }
+.quote-refresh .quote-video-details summary span { padding-left:8px; }
+.quote-refresh .quote-video-details video { display:block; width:100%; max-height:340px; background:#120b18; }
+.quote-refresh .quote-steps-simplified { padding-top:56px; padding-bottom:56px; }
+.quote-refresh .quote-steps-simplified .quote-process { margin-top:26px; }
+.quote-refresh .quote-steps-simplified .actions { margin-top:26px; }
+.quote-refresh .quote-google-reviews { padding-top:55px; padding-bottom:55px; }
+.quote-refresh .quote-google-reviews .actions { margin-top:24px; }
+@media(max-width:850px) {
+  .quote-refresh .quote-convert-inner { grid-template-columns:1fr; gap:24px; padding:36px 20px 44px; }
+  .quote-refresh .quote-convert-copy h1 { font-size:clamp(31px,7vw,43px); }
+  .quote-refresh .quote-convert-points { grid-template-columns:1fr; margin-top:16px; gap:7px; font-size:14px; }
+  .quote-refresh .quote-small-help { margin:16px 0 0; }
+  .quote-refresh .quote-quick-form { max-width:580px; width:100%; margin:0 auto; }
+}
+@media(max-width:560px) {
+  .quote-refresh .quote-convert-inner { padding:28px 16px 38px; }
+  .quote-refresh .quote-convert-copy h1 { font-size:32px; }
+  .quote-refresh .quote-convert-copy .lead { font-size:16px; }
+  .quote-refresh .quote-quick-form .form-two { grid-template-columns:1fr; }
+  .quote-refresh .quote-quick-form { padding:22px 18px; }
+  .quote-refresh .quote-meet-inner { grid-template-columns:1fr; gap:20px; }
+  .quote-refresh .quote-meet-photo { width:175px; height:200px; }
+  .quote-refresh .quote-meet-simplified, .quote-refresh .quote-steps-simplified, .quote-refresh .quote-google-reviews { padding-top:40px; padding-bottom:40px; }
+}

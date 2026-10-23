@@ -3227,3 +3227,81 @@ h3 { font-size: 19px; }
   .career-roadmap-hero .lead { font-size: 18px; }
   .career-roadmap-intro h2, .career-roadmap-journey h2, .career-roadmap-last h2 { font-size: 27px; }
 }
+
+
+/* Get a Quote page: compact, polished type scale (October 2026) */
+/* Scoped to this landing page: all original colours, media and form content stay in place. */
+.quote-refresh .quote-convert-copy h1 {
+  font-size: clamp(30px, 2.8vw, 38px);
+  line-height: 1.19;
+  letter-spacing: -0.015em;
+}
+.quote-refresh .quote-convert-copy .lead {
+  font-size: clamp(15px, 1.25vw, 16.5px);
+  line-height: 1.62;
+}
+.quote-refresh .quote-convert-copy .eyebrow,
+.quote-refresh .quote-meet-copy .eyebrow,
+.quote-refresh .quote-section-header .eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.11em;
+}
+.quote-refresh .quote-convert-points {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.quote-refresh .quote-small-help {
+  font-size: 13px;
+}
+.quote-refresh .quote-quick-form h2 {
+  font-size: clamp(21px, 1.95vw, 24px);
+  line-height: 1.23;
+}
+.quote-refresh .quote-form-description {
+  font-size: 13px;
+}
+.quote-refresh .quote-meet-copy h2,
+.quote-refresh .quote-section-header h2 {
+  font-size: clamp(23px, 2.35vw, 30px);
+  line-height: 1.23;
+}
+.quote-refresh .quote-meet-copy p:not(.eyebrow) {
+  font-size: 15px;
+  line-height: 1.65;
+}
+.quote-refresh .quote-process h3 {
+  font-size: 16px;
+  line-height: 1.3;
+}
+.quote-refresh .quote-process p {
+  font-size: 14px;
+  line-height: 1.55;
+}
+.quote-refresh .quote-video-details summary {
+  font-size: 14px;
+}
+@media (max-width: 620px) {
+  .quote-refresh .quote-convert-copy h1 {
+    font-size: 26px;
+    line-height: 1.18;
+  }
+  .quote-refresh .quote-convert-copy .lead {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .quote-refresh .quote-quick-form h2 {
+    font-size: 21px;
+  }
+  .quote-refresh .quote-meet-copy h2,
+  .quote-refresh .quote-section-header h2 {
+    font-size: 23px;
+  }
+  .quote-refresh .quote-meet-copy p:not(.eyebrow) {
+    font-size: 14.5px;
+  }
+  /* 16px keeps focused form fields from triggering iPhone browser zoom. */
+  .quote-refresh .quote-quick-form input:not([type="checkbox"]),
+  .quote-refresh .quote-quick-form select {
+    font-size: 16px;
+  }
+}

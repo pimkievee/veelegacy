@@ -3165,3 +3165,29 @@ textarea:focus {
 @media (max-width: 700px) {
   .career-llqp-details { grid-template-columns: 1fr; }
 }
+
+
+/* Sitewide text entrance animation. Text, brand assets and colours remain unchanged. */
+@media (prefers-reduced-motion: no-preference) {
+  .text-slide-in {
+    opacity: 0;
+    transform: translate3d(0, 18px, 0);
+    transition:
+      opacity 620ms ease-out var(--text-slide-delay, 0ms),
+      transform 620ms cubic-bezier(.22, 1, .36, 1) var(--text-slide-delay, 0ms);
+  }
+
+  .text-slide-in.text-in-view {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-slide-in,
+  .text-slide-in.text-in-view {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

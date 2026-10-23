@@ -3191,3 +3191,39 @@ textarea:focus {
     transition: none !important;
   }
 }
+
+/* Refined typography: smaller, calmer headings across all pages.
+   Keep the site's existing fonts, photos, video and brand colours. */
+body { font-size: 15px; }
+h1 { font-size: clamp(32px, 3.5vw, 47px); line-height: 1.17; }
+h2 { font-size: clamp(25px, 2.7vw, 36px); line-height: 1.22; }
+h3 { font-size: 19px; }
+.lead { font-size: clamp(16px, 1.35vw, 18px); line-height: 1.65; }
+.hero h1 { font-size: clamp(30px, 3vw, 40px); line-height: 1.15; }
+.hero .lead { font-size: clamp(15px, 1.3vw, 17px); }
+.hero-location { font-size: 14px; }
+.stats strong { font-size: 18px; }
+.resource-hero h1, .article-hero h1 { font-size: clamp(32px, 3.4vw, 46px); }
+.quote-refresh .quote-convert-copy h1 { font-size: clamp(31px, 3.2vw, 43px); }
+.quote-refresh .quote-convert-copy .lead { font-size: clamp(15px, 1.4vw, 18px); }
+.quote-refresh .quote-quick-form h2 { font-size: clamp(22px, 2vw, 27px); }
+.career-feature h2 { font-size: clamp(25px, 2.55vw, 34px); }
+.career-roadmap-hero h1 { font-size: clamp(31px, 3.3vw, 45px); }
+.career-roadmap-hero .lead { font-size: clamp(17px, 1.8vw, 21px); }
+.career-roadmap-intro h2, .career-roadmap-journey h2, .career-roadmap-last h2 { font-size: clamp(25px, 2.7vw, 35px); }
+@media (max-width: 620px) {
+  body { font-size: 14.5px; }
+  h1 { font-size: 27px; }
+  h2 { font-size: 25px; }
+  h3 { font-size: 18px; }
+  .lead { font-size: 15px; }
+  .hero h1 { font-size: 25px; }
+  .hero .lead { font-size: 15px; }
+  .resource-hero h1, .article-hero h1 { font-size: 27px; }
+  .quote-refresh .quote-convert-copy h1 { font-size: 28px; }
+  .quote-refresh .quote-convert-copy .lead { font-size: 15px; }
+  .career-feature h2 { font-size: 27px; }
+  .career-roadmap-hero h1 { font-size: 29px; }
+  .career-roadmap-hero .lead { font-size: 18px; }
+  .career-roadmap-intro h2, .career-roadmap-journey h2, .career-roadmap-last h2 { font-size: 27px; }
+}

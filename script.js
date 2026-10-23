@@ -100,3 +100,44 @@ if ("IntersectionObserver" in window) {
 } else {
   revealTargets.forEach((target) => target.classList.add("in-view"));
 }
+
+
+// Text content gently slides into view throughout the website.
+// Keeping text nodes and markup intact preserves accessibility, links and SEO.
+const textSlideElements = document.querySelectorAll(
+  [
+    "main h1", "main h2", "main h3", "main h4",
+    "main p", "main li", "main blockquote",
+    "main .eyebrow", "main .stats strong", "main .stats span",
+    "main .feature-list > div", "main .card > span",
+    "main .quote-info-card > strong",
+    ".trusted-partners h2", ".trusted-partners p", ".trusted-logo-card > span",
+    ".footer h3", ".footer p", ".footer .footer-links a",
+    ".footer .footer-contact > a", ".footer .footer-contact > span",
+    ".footer .footer-cta", ".footer-bottom p"
+  ].join(", ")
+);
+
+const reduceTextMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+if (!reduceTextMotion && "IntersectionObserver" in window) {
+  const textSlideObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("text-in-view");
+        observer.unobserve(entry.target);
+      });
+    },
+    { rootMargin: "0px 0px -10px 0px", threshold: 0.08 }
+  );
+
+  textSlideElements.forEach((element, index) => {
+    // Interactive form fields and anything explicitly hidden must remain usable.
+    if (element.closest("[hidden], [aria-hidden='true'], .sr-only, .honeypot")) return;
+
+    element.classList.add("text-slide-in");
+    element.style.setProperty("--text-slide-delay", `${(index % 3) * 55}ms`);
+    textSlideObserver.observe(element);
+  });
+}

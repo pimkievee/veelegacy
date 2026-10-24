@@ -12,7 +12,7 @@
 **Lead hook:** **Could buying your first home also help lower your tax bill?**
 **Short card:** See how an FHSA and eligible RRSP Home Buyers’ Plan withdrawals may fit together—plus down payments, closing costs and mortgage planning.
 **Description:** Your first-home strategy shouldn't begin and end with saving a down payment. Learn the differences between FHSA contributions, RRSP deductions and Home Buyers’ Plan withdrawals, and see how these programs may work together for eligible buyers. Explore purchase cash needs, new-home rebates and credits, Ontario land transfer tax examples, practical checklists and a clickable VeeLegacy mortgage calculator.
-**What buyers receive:** 20-page resource-edition PDF linked to the public, interactive mortgage calculator.
+**What buyers receive:** 22-page resource-edition PDF, including a new 2-page tax-smart worked example and decision checklist, linked to the public interactive mortgage calculator.
 **Accuracy note:** Eligible FHSA or RRSP contributions may reduce taxable income depending on circumstances. Withdrawing under the Home Buyers’ Plan does not itself create an additional tax deduction or guaranteed refund. The HBP generally has repayment conditions. The RESP is for education savings, not the first-home withdrawal program.
 **CTA:** Explore the first-home financial strategies.
 **Official references:**

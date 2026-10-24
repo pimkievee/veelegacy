@@ -30,3 +30,6 @@
 @media(max-width:950px){.vs-product{min-height:245px}}
 @media(max-width:710px){.vs-product{min-height:215px}.vs-prod-info p{font-size:11px}.vs-feature-home .vs-feature-text{padding-top:24px;padding-bottom:24px}.vs-feature-actions .vs-button{font-size:10px;padding:9px 13px}.vs-feature-home .vs-feature-side{align-items:center}}
 @media(max-width:390px){.vs-feature-home .vs-feature-side img{height:135px}.vs-feature-actions{align-items:stretch}.vs-feature-actions .vs-button{min-height:34px}}
+
+/* International career guide feature */
+.vs-feature-international{background:linear-gradient(115deg,#f8f1f8,#fefaf5);border-color:#e4d4e3}.vs-feature-international .vs-feature-side{background:#e8dbea}.vs-feature-international .vs-feature-detail{font-size:11px;color:#786a75;line-height:1.7;margin-bottom:16px}.vs-feature-international .vs-feature-actions{display:flex;flex-wrap:wrap;gap:9px}@media(max-width:710px){.vs-feature-international .vs-feature-actions .vs-button{font-size:10px;padding:9px 12px}}

@@ -18,3 +18,15 @@
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
 
 .vs-mobile-menu{display:none;position:relative}.vs-mobile-menu summary{cursor:pointer;list-style:none;padding:7px;color:var(--vs-plum);border:1px solid #eddee6;border-radius:10px;display:flex;align-items:center}.vs-mobile-menu summary::-webkit-details-marker{display:none}.vs-mobile-dropdown{position:absolute;z-index:30;top:calc(100% + 11px);right:0;width:206px;padding:9px;background:#fff;border:1px solid var(--vs-line);box-shadow:0 10px 30px #2b193329;border-radius:13px}.vs-mobile-dropdown a{display:block;padding:10px 11px;font-size:12px;text-decoration:none;color:var(--vs-plum)}.vs-mobile-dropdown a:hover{background:#faf3f7;border-radius:7px}@media(max-width:710px){.vs-menu{gap:10px}.vs-mobile-menu{display:block}.vs-menu .vs-shop-btn{font-size:10px}}
+
+/* Outcome-focused shop copy and first-home planning feature */
+.vs-prod-info p{line-height:1.56}
+.vs-feature-home{background:linear-gradient(115deg,#fff9f1,#f2e8f0);border-color:#e9d9cb}
+.vs-feature-home .vs-feature-side{background:#efe3de}
+.vs-feature-home .vs-feature-text{padding-top:35px;padding-bottom:35px}
+.vs-feature-home .vs-feature-detail{font-size:11px;color:#786a71;max-width:720px;line-height:1.65;margin-bottom:19px}
+.vs-feature-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.vs-feature-actions .vs-button{font-size:11px}
+@media(max-width:950px){.vs-product{min-height:245px}}
+@media(max-width:710px){.vs-product{min-height:215px}.vs-prod-info p{font-size:11px}.vs-feature-home .vs-feature-text{padding-top:24px;padding-bottom:24px}.vs-feature-actions .vs-button{font-size:10px;padding:9px 13px}.vs-feature-home .vs-feature-side{align-items:center}}
+@media(max-width:390px){.vs-feature-home .vs-feature-side img{height:135px}.vs-feature-actions{align-items:stretch}.vs-feature-actions .vs-button{min-height:34px}}

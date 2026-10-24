@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 575" width="440" height="575" role="img" aria-label="CANADIAN JOB SEARCH TOOLKIT VeeLegacy book cover">
+<defs><linearGradient id="g" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#faf2f0"/><stop offset="1" stop-color="#e8c8d8"/></linearGradient></defs>
+<rect width="440" height="575" rx="14" fill="url(#g)"/><path d="M440 260Q160 430 440 574" fill="#fff" opacity=".25"/><path d="M0 500Q185 400 440 486V575H0" fill="#fff" opacity=".42"/>
+<rect x="24" y="25" width="392" height="525" rx="5" fill="none" stroke="#b99b7a" opacity=".42"/>
+<text x="42" y="74" font-family="Arial,sans-serif" font-weight="700" font-size="17" letter-spacing="5" fill="#886b67">VEELEGACY</text>
+<line x1="42" y1="91" x2="396" y2="91" stroke="#b99b7a" stroke-width="1.2"/>
+<text x="42" y="166" font-family="Georgia, 'Times New Roman', serif" font-weight="500" font-size="37" letter-spacing="-0.5" fill="#39243e">CANADIAN</text><text x="42" y="212" font-family="Georgia, 'Times New Roman', serif" font-weight="500" font-size="37" letter-spacing="-0.5" fill="#39243e">JOB SEARCH</text><text x="42" y="258" font-family="Georgia, 'Times New Roman', serif" font-weight="500" font-size="37" letter-spacing="-0.5" fill="#39243e">TOOLKIT</text>
+<g opacity=".77"><rect x="224" y="305" width="180" height="140" rx="12" stroke="#b18456" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" fill="none"/><path d="M270 304v-27h88v27M224 356q90 54 180 0M306 370v18" stroke="#b18456" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" fill="none"/></g>
+<line x1="42" y1="501" x2="394" y2="501" stroke="#b99b7a" stroke-width="1.1"/>
+<text x="42" y="527" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.6" fill="#64485b">GET PREPARED • FIND OPPORTUNITIES</text>
+</svg>

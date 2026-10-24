@@ -7,7 +7,7 @@
 | Product PDF | Current pages | Price CAD | What changed |
 |---|---:|---:|---|
 | Canadian_Budget_and_Debt_Payoff_Planner_2026_RESOURCE_EDITION.pdf | 20 | $11 | Worked budgeting and debt strategy examples, named FCAC resources, companion editable Excel expense/debt tracker. |
-| First_Home_Financial_Planning_Toolkit_2026_RESOURCE_EDITION.pdf | 20 | $19 | Clickable VeeLegacy mortgage calculator, Ontario land transfer tax scenario, HBP/FHSA differences, closing-cost checklist. |
+| First_Home_Financial_Planning_Toolkit_2026_RESOURCE_EDITION.pdf | 22 | $19 | Clickable VeeLegacy mortgage calculator, tax-smart FHSA/RRSP/HBP worked example, Ontario land transfer tax scenario, HBP/FHSA differences, closing-cost checklist. |
 | Newcomers_Financial_Starter_Guide_2026_RESOURCE_EDITION.pdf | 34 | $19 | Practical fictional newcomer scenarios, bank fee/eligibility questions and government links; retains bank/provider comparisons. |
 | Canadian_Job_Search_and_Resume_Toolkit_2026_RESOURCE_EDITION.pdf | 38 | $19 | Employer-first job search, sector-specific boards, Simplify workflow, ATS/resume comparison, tailored sample, outreach and AI interview practice. |
 | Business_Ideas_and_Side_Hustles_Starter_Kit_2026_RESOURCE_EDITION.pdf | 36 | $19 | 79 ideas plus actionable blueprints for cleaning, Alibaba sourcing, samples, supplier negotiations, ecommerce unit economics, UGC, seasonal services, creator outreach and business registration. |

@@ -3305,3 +3305,164 @@ h3 { font-size: 19px; }
     font-size: 16px;
   }
 }
+
+
+/* VeeLegacy premium presentation: preserve original brand palette, fonts, logo and media. */
+.site-header {
+  background: rgba(255, 250, 241, .96);
+  box-shadow: 0 5px 24px rgba(23, 16, 38, .035);
+}
+.nav { padding-top: 10px; padding-bottom: 10px; }
+.nav-links { font-size: 12px; font-weight: 600; }
+.nav-cta { font-size: 12px; font-weight: 700; }
+.hero-inner { min-height: 535px; padding-top: 52px; padding-bottom: 58px; gap: 48px; }
+.hero h1 { max-width: 610px; font-size: clamp(31px, 2.75vw, 39px); line-height: 1.19; letter-spacing: -.014em; }
+.hero .lead { font-size: clamp(15px, 1.2vw, 16.5px); line-height: 1.72; }
+.hero-location { max-width: 530px; font-size: 13.5px; line-height: 1.75; }
+.section { padding-top: 64px; padding-bottom: 64px; }
+.section-header { gap: 38px; }
+.section-header h2 { font-size: clamp(24px, 2.4vw, 33px); line-height: 1.25; }
+.section-header > p { font-size: 14px; line-height: 1.7; }
+.cards { gap: 18px; }
+.service-grid .card { border-radius: 15px; padding: 28px; }
+.service-grid .card h3 { font-size: 18px; }
+.service-grid .card p { font-size: 14px; line-height: 1.7; }
+.stats { max-width: 980px; border-radius: 14px; overflow: hidden; }
+.stats div { min-height: 125px; padding: 24px; }
+.stats strong { font-size: 16px; }
+.stats span { font-size: 13px; }
+.local-proof .local-tags { gap: 9px; }
+.local-proof .local-tags span { font-size: 12px; }
+.btn, .nav-cta { font-weight: 700; box-shadow: 0 8px 23px rgba(184,142,66,.16); }
+.btn:hover, .nav-cta:hover { box-shadow: 0 12px 28px rgba(184,142,66,.23); }
+.portrait-frame, .photo-card { border-radius: 18px; }
+.quote-refresh .quote-convert-inner { gap: 50px; }
+.quote-refresh .quote-meet-copy h2, .quote-refresh .quote-section-header h2 { font-size: clamp(23px, 2.1vw, 29px); }
+
+/* Footer replaces the busy partner grid and exposed telephone number. */
+.premium-footer {
+  background: linear-gradient(125deg, var(--deep), var(--purple) 65%, var(--navy));
+}
+.premium-footer::before { opacity: .1; }
+.premium-footer-grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 1.5fr) minmax(140px, .7fr) minmax(215px, 1fr);
+  gap: clamp(25px, 5vw, 78px);
+  padding: 47px 0 34px;
+}
+.premium-footer-brand .footer-brand-lockup { margin-bottom: 9px; font-size: 20px; }
+.premium-footer-brand .footer-brand-lockup img { width: 52px; height: 52px; }
+.premium-footer-brand p { max-width: 360px; font-size: 13px; line-height: 1.7; color: #e6d8e4; }
+.premium-footer h3 { font-size: 11px; letter-spacing: .12em; margin-bottom: 12px; }
+.premium-footer-nav { display: grid; gap: 11px; align-content: start; }
+.premium-footer-nav a, .premium-footer-connect > a {
+  color: #eaddea; font-size: 13px; font-weight: 500; line-height: 1.45;
+  transition: color .2s ease;
+}
+.premium-footer-nav a:hover, .premium-footer-connect > a:hover { color: #f4d9b0; }
+.premium-footer-connect p { margin-bottom: 14px; font-size: 13px; line-height: 1.65; color: #e6d8e4; }
+.premium-footer-contact {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 11px 18px; margin-bottom: 16px;
+  border: 1px solid var(--champagne); border-radius: 30px; background: transparent;
+  font: 700 13px "Inter", Arial, sans-serif; color: #f5e7cb; cursor: pointer;
+  transition: background .2s ease, transform .2s ease;
+}
+.premium-footer-contact:hover { background: rgba(210,172,99,.13); transform: translateY(-1px); }
+.premium-footer-connect > a { display: block; overflow-wrap: anywhere; }
+.premium-footer-bottom {
+  width: min(var(--max), calc(100% - 40px)); display: flex; flex-wrap: wrap;
+  justify-content: space-between; gap: 12px; padding: 17px 0 23px;
+  border-top: 1px solid rgba(255,255,255,.17);
+}
+.premium-footer-bottom p { font-size: 11px; line-height: 1.55; }
+.premium-footer-bottom a { color: #e9dae8; font-size: 11px; }
+.premium-footer-bottom a:hover { color: #f4d9b0; }
+
+/* Discreet floating contact assistant, using the existing VeeLegacy headshot. */
+.vl-contact { position: fixed; right: 22px; bottom: 22px; z-index: 110; width: auto; font-family: "Inter", Arial, sans-serif; font-size: 14px; line-height: 1.5; }
+.vl-contact button, .vl-contact input, .vl-contact textarea { font-family: inherit; }
+.vl-contact-launch {
+  display: flex; align-items: center; gap: 10px; padding: 6px 17px 6px 6px;
+  border: 1px solid rgba(210,172,99,.42); border-radius: 60px;
+  box-shadow: 0 12px 40px rgba(35,13,56,.23); background: var(--white);
+  color: var(--navy); cursor: pointer; font-size: 13px; font-weight: 700;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.vl-contact-launch:hover { transform: translateY(-2px); box-shadow: 0 16px 44px rgba(35,13,56,.27); }
+.vl-contact-launch img { width: 44px; height: 44px; object-fit: cover; object-position: 50% 22%; border-radius: 50%; }
+.vl-contact-launch .vl-launch-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--champagne); }
+.vl-contact-panel {
+  width: min(365px, calc(100vw - 28px)); max-height: min(600px, calc(100dvh - 34px)); overflow-y: auto;
+  border: 1px solid var(--line); border-radius: 19px; background: white;
+  box-shadow: 0 18px 65px rgba(23,16,38,.23);
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transform: translateY(16px) scale(.98);
+  transition: opacity .25s ease, transform .25s ease, visibility .25s ease;
+  position: absolute; right: 0; bottom: 70px; color: var(--ink);
+}
+.vl-contact.is-open .vl-contact-panel { opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0) scale(1); }
+.vl-contact-panel-header {
+  display: flex; align-items: center; gap: 12px; padding: 18px 20px;
+  background: linear-gradient(115deg, var(--deep), var(--purple)); color: var(--white);
+}
+.vl-contact-panel-header img { width: 47px; height: 47px; border: 2px solid rgba(255,255,255,.6); object-fit: cover; object-position: 50% 22%; border-radius: 50%; }
+.vl-contact-panel-header strong { display: block; font-size: 15px; line-height: 1.25; }
+.vl-contact-panel-header small { display: block; color: #f4d9b0; font-size: 11px; margin-top: 3px; }
+.vl-contact-close { margin-left: auto; color: white; border: none; background: transparent; cursor: pointer; font-size: 24px; line-height: 1; padding: 6px; }
+.vl-contact-content { padding: 20px; }
+.vl-contact-intro { margin: 0 0 14px; font-size: 13px; line-height: 1.6; color: var(--text); }
+.vl-contact-form { display: grid; gap: 11px; }
+.vl-contact-form label { display: grid; gap: 5px; font-weight: 650; font-size: 12px; color: var(--navy); }
+.vl-contact-form input:not([type="checkbox"]), .vl-contact-form textarea {
+  width: 100%; min-width: 0; border: 1px solid #ddcfdf; border-radius: 9px;
+  padding: 10px 12px; background: white; color: var(--navy); font-weight: 400;
+  font-size: 16px; line-height: 1.45; outline-offset: 2px;
+}
+.vl-contact-form textarea { resize: vertical; min-height: 83px; }
+.vl-contact-form .vl-contact-consent {
+  display: flex; align-items: flex-start; gap: 8px; font-weight: 400; font-size: 10.5px; line-height: 1.5; color: var(--muted);
+}
+.vl-contact-consent input { margin-top: 3px; flex-shrink: 0; accent-color: var(--purple); }
+.vl-contact-consent a { color: var(--purple); text-decoration: underline; }
+.vl-contact-submit {
+  display: block; width: 100%; border: none; border-radius: 9px;
+  padding: 12px 16px; color: var(--white); background: var(--purple);
+  font-size: 13px; font-weight: 700; cursor: pointer;
+}
+.vl-contact-submit:disabled { opacity: .65; cursor: wait; }
+.vl-contact-status { margin: 0; font-size: 12px; color: var(--purple); line-height: 1.5; }
+.vl-contact-note { margin: 0; font-size: 10.5px; line-height: 1.5; color: var(--muted); }
+.vl-contact-teaser {
+  position: absolute; right: 0; bottom: 73px; width: min(265px, calc(100vw - 30px));
+  padding: 13px 32px 13px 15px; border: 1px solid var(--line); border-radius: 14px;
+  background: white; color: var(--navy); box-shadow: 0 10px 34px rgba(35,13,56,.14);
+  font-size: 12px; line-height: 1.5; opacity: 0; visibility: hidden; pointer-events: none;
+  transform: translateY(10px); transition: opacity .25s ease, transform .25s ease, visibility .25s ease;
+}
+.vl-contact.show-teaser:not(.is-open) .vl-contact-teaser { opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0); }
+.vl-teaser-x { position: absolute; right: 7px; top: 6px; padding: 3px; border: none; background: transparent; font-size: 17px; color: var(--muted); cursor: pointer; }
+.vl-contact-teaser::after { content: ""; position: absolute; right: 35px; bottom: -7px; width: 12px; height: 12px; transform: rotate(45deg); background: white; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+@media (max-width: 760px) {
+  .premium-footer-grid { grid-template-columns: 1fr 1fr; gap: 25px; }
+  .premium-footer-brand { grid-column: 1 / -1; }
+  .vl-contact { right: 14px; bottom: max(14px, env(safe-area-inset-bottom)); }
+}
+@media (max-width: 620px) {
+  .section { padding-top: 43px; padding-bottom: 43px; }
+  .hero h1 { font-size: 27px; }
+  .hero-inner { min-height: 0; gap: 25px; }
+  .stats div { min-height: 0; }
+  .premium-footer-grid { grid-template-columns: 1fr 1fr; padding: 36px 0 24px; }
+  .premium-footer-grid, .premium-footer-bottom {
+    width: auto !important; margin-left: 16px !important; margin-right: 16px !important;
+  }
+  .premium-footer-brand { grid-column: 1 / -1; }
+  .premium-footer-connect { grid-column: 1 / -1; }
+  .vl-contact-launch { padding: 5px 13px 5px 5px; gap: 8px; font-size: 12px; }
+  .vl-contact-launch img { width: 42px; height: 42px; }
+  .vl-contact-panel { bottom: 66px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .vl-contact-panel, .vl-contact-teaser, .vl-contact-launch { transition: none; }
+}

@@ -141,3 +141,107 @@ if (!reduceTextMotion && "IntersectionObserver" in window) {
     textSlideObserver.observe(element);
   });
 }
+
+
+// Sitewide discreet question form. The existing email/lead processing service is reused.
+(() => {
+  if (document.querySelector(".vl-contact")) return;
+  const root = document.createElement("aside");
+  root.className = "vl-contact";
+  root.setAttribute("aria-label", "Contact VeeLegacy");
+  root.innerHTML = `
+    <div class="vl-contact-teaser" role="status">
+      Have a question? I'm here to help you find your next step.
+      <button type="button" class="vl-teaser-x" aria-label="Dismiss welcome message">×</button>
+    </div>
+    <div class="vl-contact-panel" id="veelegacy-contact-panel" aria-label="Ask VeeLegacy a question">
+      <div class="vl-contact-panel-header">
+        <img src="/assets/profile.jpg" alt="" width="47" height="47" decoding="async">
+        <div><strong>Have a question?</strong><small>VeeLegacy · Financial guidance</small></div>
+        <button class="vl-contact-close" type="button" aria-label="Close question form">×</button>
+      </div>
+      <div class="vl-contact-content">
+        <p class="vl-contact-intro">Tell me what you're exploring and I'll follow up personally.</p>
+        <form class="vl-contact-form" action="https://formspree.io/f/mojblekj" method="POST">
+          <input type="hidden" name="formType" value="Website floating question">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
+          <label>Your name<input type="text" name="fullName" autocomplete="name" required placeholder="Full name"></label>
+          <label>Email address<input type="email" name="email" autocomplete="email" required placeholder="you@example.com"></label>
+          <label>How can I help?<textarea name="message" required rows="3" maxlength="1200" placeholder="I'd like to know more about…"></textarea></label>
+          <label class="vl-contact-consent"><input type="checkbox" name="consent" required><span>I agree to be contacted about my request and to the <a href="/privacy-policy/">Privacy Policy</a>.</span></label>
+          <button class="vl-contact-submit" type="submit">Send my question →</button>
+          <p class="vl-contact-status" role="status" aria-live="polite" hidden></p>
+          <p class="vl-contact-note">Please don't include sensitive medical, banking or identification details.</p>
+        </form>
+      </div>
+    </div>
+    <button type="button" class="vl-contact-launch" aria-controls="veelegacy-contact-panel" aria-expanded="false">
+      <img src="/assets/profile.jpg" alt="" width="44" height="44" decoding="async">
+      <span>Have a question?</span><span class="vl-launch-dot" aria-hidden="true"></span>
+    </button>`;
+  document.body.appendChild(root);
+
+  const launcher = root.querySelector(".vl-contact-launch");
+  const close = root.querySelector(".vl-contact-close");
+  const panel = root.querySelector(".vl-contact-panel");
+  const form = root.querySelector(".vl-contact-form");
+  const status = root.querySelector(".vl-contact-status");
+  const submit = root.querySelector(".vl-contact-submit");
+  const hideTeaser = () => {
+    root.classList.remove("show-teaser");
+    try { sessionStorage.setItem("vl-contact-teaser", "seen"); } catch (_) {}
+  };
+  const openPanel = () => {
+    hideTeaser();
+    root.classList.add("is-open");
+    launcher.setAttribute("aria-expanded", "true");
+    panel.querySelector('input[name="fullName"]').focus();
+  };
+  const closePanel = () => {
+    root.classList.remove("is-open");
+    launcher.setAttribute("aria-expanded", "false");
+    launcher.focus();
+  };
+  launcher.addEventListener("click", () => {
+    if (root.classList.contains("is-open")) closePanel();
+    else openPanel();
+  });
+  close.addEventListener("click", closePanel);
+  root.querySelector(".vl-teaser-x").addEventListener("click", hideTeaser);
+  document.querySelectorAll("[data-open-contact-widget]").forEach((button) => {
+    button.addEventListener("click", openPanel);
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && root.classList.contains("is-open")) closePanel();
+  });
+  let alreadySeen = false;
+  try { alreadySeen = sessionStorage.getItem("vl-contact-teaser") === "seen"; } catch (_) {}
+  if (!alreadySeen) {
+    window.setTimeout(() => {
+      if (!root.classList.contains("is-open")) root.classList.add("show-teaser");
+    }, 1700);
+  }
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    status.hidden = true;
+    submit.disabled = true;
+    submit.textContent = "Sending…";
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" }
+      });
+      if (!response.ok) throw new Error("Unable to send");
+      form.reset();
+      status.hidden = false;
+      status.textContent = "Thank you! Your question has been sent. I'll follow up by email.";
+    } catch (_) {
+      status.hidden = false;
+      status.textContent = "We couldn't send your message. Please email valerie@veelegacy.ca instead.";
+    } finally {
+      submit.disabled = false;
+      submit.textContent = "Send my question →";
+    }
+  });
+})();

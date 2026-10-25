@@ -48,3 +48,12 @@ New public files: `shop/INTERNATIONAL_JOB_PAYHIP_LISTING_2026.md` and updated `a
 - Other paid guides unchanged: Budget $11; First Home, Newcomer and Side Hustle each $19.
 - Five individual paid guides total **$97 CAD**; bundle **$89 CAD**, providing **$8 CAD savings**.
 - **Important:** Website-facing pricing is updated; Payhip checkout prices have not been changed through GitHub. The storefront bundle button is temporarily disabled until Payhip pricing and revised PDF delivery are confirmed.
+
+## October 24 - clickable job toolkit navigation update
+
+- Updated `VeeLegacy_Canadian_Job_Search_In_Canada_and_From_Abroad_2026.pdf` (52 pages, CAD $29).
+- Page 2 now opens with a **nine-step Canadian job search from abroad fast track**, covering Job Bank searches through eligibility, applications, interviews, offer documents and IRCC work-permit steps.
+- Page 3's **Find what you need quickly** contents now has a prominent **Canadian Jobs From Abroad** shortcut to **page 39**, clickable navigation to all 11 board categories and resume tools, plus full 33 PDF bookmarks for compatible readers.
+- Original detailed Canada-only from-abroad section remains pages 39-52; existing resource and website links are retained.
+- Refreshed customer ZIPs: `VeeLegacy_Job_Search_29_CAD_WITH_CLICKABLE_NAVIGATION.zip` and `VeeLegacy_Five_Toolkit_Bundle_89_CAD_WITH_CLICKABLE_JOB_NAVIGATION.zip`. Bundle also includes latest First Home tax planning version.
+- These paid products are **not in the public repo**. They require seller upload into Payhip followed by a download test before claiming buyers get the new edition.

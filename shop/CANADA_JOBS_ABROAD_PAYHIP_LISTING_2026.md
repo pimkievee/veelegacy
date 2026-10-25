@@ -11,7 +11,9 @@
 Discover which Canadian job listings are open to international applicants, how to check employers and genuine LMIA/work-permit routes, what documents and professional qualifications employers may require, and how to apply without wasting time or falling for job scams.
 
 ## What customers receive
-- **52-page Canada-only PDF:** the original 38-page Canadian job search edition plus **14 new pages specifically for people applying from outside Canada**.
+- **52-page Canada-only PDF, now easier to navigate:** the original 38-page Canadian job search edition plus **14 new pages specifically for people applying from outside Canada**.
+- **NEW Page 2 fast start:** Nine practical steps from finding a suitable Canadian job through employer vetting, applying, interviewing, receiving an offer and understanding the relevant work permit steps.
+- **NEW Page 3 clickable contents:** International candidates jump directly to the full Canada-from-abroad section on **page 39**, without scrolling through the earlier chapters. Links to Canadian job-board categories and interview tools are also clickable; 33 PDF bookmarks help navigation in compatible readers.
 - **86 categorized Canadian career destinations** and resume, ATS, Simplify, networking and interview guidance.
 - **Official Job Bank foreign candidates workflow:** how to locate the “Canadians and international candidates” filter and verify “Who can apply?” in each posting.
 - **LMIA status explained:** requested versus approved and why neither is a guaranteed job or work permit.
@@ -39,7 +41,7 @@ The guide contains official job-search directories and eligibility instructions,
 **52 pages | Introductory CAD $29.**
 
 ## Seller launch checklist
-1. Upload `VeeLegacy_Canadian_Job_Search_In_Canada_and_From_Abroad_2026.pdf` as the job-product download.
+1. Upload the latest PDF from `VeeLegacy_Job_Search_29_CAD_WITH_CLICKABLE_NAVIGATION.zip` as the job-product download; test that the page-3 internal link reaches page 39.
 2. Retain the AI Interview & Career Prompts bonus if advertised.
 3. Replace the PDF inside the CAD $89 five-toolkit bundle.
 4. Confirm Payhip product title, 52-page claim, customer delivery, price and refund wording.

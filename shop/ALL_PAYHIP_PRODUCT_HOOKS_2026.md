@@ -27,8 +27,8 @@
 **Eligibility note:** Benefits and account options depend on residency, status, income and other conditions.
 
 ## 4. Canadian Job Search: In Canada & From Abroad — CAD $29
-**Lead hook:** **Looking for Canadian jobs while you live outside Canada? Stop applying to vacancies that only hire people already authorized to work.**
-**Short card:** Find Canadian jobs open to international candidates, learn actual employer and work-permit requirements, and improve your resume, ATS fit and interview preparation.
+**Lead hook:** **Searching for jobs in Canada? Find the right job boards whether you live here or are applying from abroad.**
+**Short card:** Explore job boards and employers for candidates already in Canada, plus Canadian vacancies open to foreign applicants, relevant work-permit requirements, resume/ATS tools and interview preparation.
 **Description:** A 52-page Canada-only career guide combining 86 Canadian job destinations, resume/application tools, and 14 pages specifically for people applying to Canadian employers from overseas. Walk through Job Bank's foreign-candidate filter, LMIA requested vs approved, eligibility and credentials, employer-specific work permits, AIP and community designated-employer pathways, truthful outreach messages and scam prevention.
 **CTA:** Explore Canadian jobs open to foreign applicants.
 **Accuracy note:** Job listings change; foreign-applicant eligibility does not guarantee sponsorship, visa/work-permit approval or a job. The latest version must be uploaded to Payhip before claiming customers receive it.

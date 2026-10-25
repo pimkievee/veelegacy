@@ -6,14 +6,14 @@
 **Canadian Job Search Toolkit: In Canada & From Abroad**
 
 ## Selling hook
-**Living outside Canada and looking for a Canadian job? Stop applying to vacancies that won't consider overseas candidates.**
+**Looking for jobs in Canada? Whether you already live here or are applying from abroad, find the boards and strategies relevant to you.**
 
-Discover which Canadian job listings are open to international applicants, how to check employers and genuine LMIA/work-permit routes, what documents and professional qualifications employers may require, and how to apply without wasting time or falling for job scams.
+For people living in Canada: explore Canadian job boards by industry, ATS and resume tools, recruiter outreach and interview preparation. For people applying from abroad: learn how to identify Canadian vacancies open to foreign applicants, check actual employer requirements and LMIA/work-permit conditions, and avoid recruitment scams.
 
 ## What customers receive
-- **52-page Canada-only PDF, now easier to navigate:** the original 38-page Canadian job search edition plus **14 new pages specifically for people applying from outside Canada**.
+- **52-page Canadian jobs guide for both audiences:** 38 pages of Canadian job boards, employers, resume and career tools for applicants in Canada, plus 14 extra pages specifically for those applying to jobs in Canada from abroad.
 - **NEW Page 2 fast start:** Nine practical steps from finding a suitable Canadian job through employer vetting, applying, interviewing, receiving an offer and understanding the relevant work permit steps.
-- **NEW Page 3 clickable contents:** International candidates jump directly to the full Canada-from-abroad section on **page 39**, without scrolling through the earlier chapters. Links to Canadian job-board categories and interview tools are also clickable; 33 PDF bookmarks help navigation in compatible readers.
+- **NEW Page 3 clickable contents:** Readers in Canada can select industry job boards, while overseas candidates can jump directly to the Canada-from-abroad section on **page 39**, without scrolling through the earlier chapters. Links to Canadian job-board categories and interview tools are also clickable; 33 PDF bookmarks help navigation in compatible readers.
 - **86 categorized Canadian career destinations** and resume, ATS, Simplify, networking and interview guidance.
 - **Official Job Bank foreign candidates workflow:** how to locate the “Canadians and international candidates” filter and verify “Who can apply?” in each posting.
 - **LMIA status explained:** requested versus approved and why neither is a guaranteed job or work permit.
@@ -25,7 +25,7 @@ Discover which Canadian job listings are open to international applicants, how t
 - **Separate AI interview/career prompts bonus**, if included with the uploaded $29 package.
 
 ## Ideal buyers
-- Job seekers already living in Canada.
+- **Job seekers living in Canada** who want Canadian job boards, resume/ATS resources, recruiters and interview support.
 - Applicants in Nigeria or elsewhere **outside Canada** who want to work **in Canada**, not in another country.
 - Skilled professionals, career switchers and applicants who need to understand which Canadian employers may accept applications from abroad.
 

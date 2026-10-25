@@ -16,7 +16,7 @@
 ## Seller bundles
 
 - All five paid PDFs purchased individually total **$97 CAD**.
-- Introductory five-paid-guide bundle suggested at **$89 CAD**.
+- Introductory five-paid-guide bundle suggested at **$79 CAD**.
 - Budget Planner customer ZIP includes the editable `VeeLegacy_Interactive_Budget_and_Debt_Tracker.xlsx` and starting instructions.
 - Job Search Toolkit customer ZIP includes the AI interview/career prompts bonus.
 - First Home PDF opens the public [mortgage calculator](https://veelegacy.ca/mortgage-calculator/).
@@ -46,7 +46,7 @@ New public files: `shop/INTERNATIONAL_JOB_PAYHIP_LISTING_2026.md` and updated `a
 
 - Canadian Job Search: In Canada & From Abroad: **$29 CAD** (formerly $19).
 - Other paid guides unchanged: Budget $11; First Home, Newcomer and Side Hustle each $19.
-- Five individual paid guides total **$97 CAD**; bundle **$89 CAD**, providing **$8 CAD savings**.
+- Five individual paid guides total **$97 CAD**; bundle **$79 CAD**, providing **$18 CAD savings**.
 - **Important:** Website-facing pricing is updated; Payhip checkout prices have not been changed through GitHub. The storefront bundle button is temporarily disabled until Payhip pricing and revised PDF delivery are confirmed.
 
 ## October 24 - clickable job toolkit navigation update
@@ -57,3 +57,7 @@ New public files: `shop/INTERNATIONAL_JOB_PAYHIP_LISTING_2026.md` and updated `a
 - Original detailed Canada-only from-abroad section remains pages 39-52; existing resource and website links are retained.
 - Refreshed customer ZIPs: `VeeLegacy_Job_Search_29_CAD_WITH_CLICKABLE_NAVIGATION.zip` and `VeeLegacy_Five_Toolkit_Bundle_89_CAD_WITH_CLICKABLE_JOB_NAVIGATION.zip`. Bundle also includes latest First Home tax planning version.
 - These paid products are **not in the public repo**. They require seller upload into Payhip followed by a download test before claiming buyers get the new edition.
+
+## October 24 — updated introductory bundle discount
+
+All five paid ebooks cost **$97 CAD** separately ($11 + $19 + $19 + $29 + $19). The complete five-guide collection is now advertised at **$79 CAD**, a saving of **$18 CAD** (about 18.6%). This is a website and product-copy change; the actual Payhip checkout price remains to be updated and tested. The bundle purchase button is deliberately disabled until Payhip matches $79.

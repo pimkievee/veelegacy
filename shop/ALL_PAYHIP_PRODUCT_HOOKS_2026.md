@@ -46,10 +46,10 @@
 **Description:** The free 18-page VeeLegacy financial resource helps you understand everyday money decisions, plan your next steps and find official references for Canadian savings and financial planning accounts.
 **CTA:** Get my free guide.
 
-## Complete Digital Toolkit Bundle — CAD $89
+## Complete Digital Toolkit Bundle — CAD $79
 **Lead hook:** **Five practical guides. One fresh start. Save $8.**
 **Short card:** Your budget, first-home plan, newcomer roadmap, job search and side-hustle starter resources in one value bundle.
-**Description:** Get the five paid VeeLegacy guides together for CAD $89 instead of CAD $97 individually. Use the collection to plan spending and debt, explore home buying and eligible tax-saving programs, settle into Canadian financial systems, find job resources and prepare applications, or research a viable side hustle. Includes the companion budget workbook and career preparation bonus where supplied by the latest upload.
+**Description:** Get the five paid VeeLegacy guides together for CAD $79 instead of CAD $97 individually. Use the collection to plan spending and debt, explore home buying and eligible tax-saving programs, settle into Canadian financial systems, find job resources and prepare applications, or research a viable side hustle. Includes the companion budget workbook and career preparation bonus where supplied by the latest upload.
 **CTA:** Explore the complete collection.
 
 ## Before making these descriptions live in Payhip

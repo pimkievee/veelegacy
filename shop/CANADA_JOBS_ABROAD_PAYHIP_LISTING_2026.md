@@ -20,7 +20,7 @@ Discover which Canadian job listings are open to international applicants, how t
 - **Canadian employer pathways:** Atlantic Immigration Program designated employers and rural/Francophone community pathways, including where to check official participating employers and active positions.
 - **Ready-to-use examples:** overseas applicant resume considerations, real-world screening exercises, employer outreach messages, work-authorization questions and a 30-day application plan.
 - **Scam protection:** avoid paying for an LMIA, recruitment fraud and guaranteed visa promises.
-- **Separate AI interview/career prompts bonus**, if included with the uploaded $19 package.
+- **Separate AI interview/career prompts bonus**, if included with the uploaded $29 package.
 
 ## Ideal buyers
 - Job seekers already living in Canada.
@@ -28,7 +28,7 @@ Discover which Canadian job listings are open to international applicants, how t
 - Skilled professionals, career switchers and applicants who need to understand which Canadian employers may accept applications from abroad.
 
 ## Price
-**CAD $19**, subject to confirmed Payhip pricing.
+**CAD $29**, subject to confirmed Payhip pricing.
 
 ## Important conditions
 The guide contains official job-search directories and eligibility instructions, not a guarantee of current openings, employer sponsorship, LMIA approval, a work permit, visa or Canadian employment. “Open to international candidates” alone does not mean a firm will sponsor a particular applicant. Applicants must match occupation requirements, meet immigration eligibility, and provide truthful information.
@@ -36,12 +36,12 @@ The guide contains official job-search directories and eligibility instructions,
 ## Instagram blurb
 **Looking for work in Canada while living abroad?** 🇨🇦 This toolkit shows where to find Canadian jobs accepting overseas applications, how to check LMIA and work-permit requirements, what qualifications employers ask for, and how to apply smarter. Plus Canadian job boards, ATS tools and interview resources.
 
-**52 pages | Introductory CAD $19.**
+**52 pages | Introductory CAD $29.**
 
 ## Seller launch checklist
 1. Upload `VeeLegacy_Canadian_Job_Search_In_Canada_and_From_Abroad_2026.pdf` as the job-product download.
 2. Retain the AI Interview & Career Prompts bonus if advertised.
-3. Replace the PDF inside the CAD $69 five-toolkit bundle.
+3. Replace the PDF inside the CAD $89 five-toolkit bundle.
 4. Confirm Payhip product title, 52-page claim, customer delivery, price and refund wording.
 5. Test downloads on iPhone and computer before switching the website's preview button to direct checkout.
 

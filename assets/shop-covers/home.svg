@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 575" width="440" height="575" role="img" aria-label="FIRST HOME FINANCIAL TOOLKIT VeeLegacy book cover">
-<defs><linearGradient id="g" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#f9f4eb"/><stop offset="1" stop-color="#d7e4d8"/></linearGradient></defs>
+<defs><linearGradient id="g" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#FFF0F4"/><stop offset="1" stop-color="#F7DBE9"/></linearGradient></defs>
 <rect width="440" height="575" rx="14" fill="url(#g)"/><path d="M440 260Q160 430 440 574" fill="#fff" opacity=".25"/><path d="M0 500Q185 400 440 486V575H0" fill="#fff" opacity=".42"/>
 <rect x="24" y="25" width="392" height="525" rx="5" fill="none" stroke="#b99b7a" opacity=".42"/>
 <text x="42" y="74" font-family="Arial,sans-serif" font-weight="700" font-size="17" letter-spacing="5" fill="#886b67">VEELEGACY</text>

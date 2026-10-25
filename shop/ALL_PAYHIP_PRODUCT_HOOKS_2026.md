@@ -26,12 +26,12 @@
 **CTA:** Start your first 30 days with a clearer plan.
 **Eligibility note:** Benefits and account options depend on residency, status, income and other conditions.
 
-## 4. Canadian Job Search & Resume Toolkit — CAD $19
-**Lead hook:** **Sending resumes and hearing nothing back? Change how you search and apply.**
-**Short card:** Find 86 career destinations, compare ATS tools, tailor applications and practise role-specific interviews.
-**Description:** A resource-driven, 38-page Canadian job search toolkit that goes beyond generic resume tips. Browse categorized job boards and employer destinations, discover application helpers such as Simplify, learn how to tailor your resume truthfully to an actual job posting, work with printable application trackers and copyable recruiter outreach examples, then practise interviews with job-specific AI prompts.
-**CTA:** Find better places to look—and apply smarter.
-**Accuracy note:** ATS checker scores are estimates, not guaranteed employer acceptance. No job outcome is guaranteed.
+## 4. Canadian Job Search: In Canada & From Abroad — CAD $19
+**Lead hook:** **Looking for Canadian jobs while you live outside Canada? Stop applying to vacancies that only hire people already authorized to work.**
+**Short card:** Find Canadian jobs open to international candidates, learn actual employer and work-permit requirements, and improve your resume, ATS fit and interview preparation.
+**Description:** A 52-page Canada-only career guide combining 86 Canadian job destinations, resume/application tools, and 14 pages specifically for people applying to Canadian employers from overseas. Walk through Job Bank's foreign-candidate filter, LMIA requested vs approved, eligibility and credentials, employer-specific work permits, AIP and community designated-employer pathways, truthful outreach messages and scam prevention.
+**CTA:** Explore Canadian jobs open to foreign applicants.
+**Accuracy note:** Job listings change; foreign-applicant eligibility does not guarantee sponsorship, visa/work-permit approval or a job. The latest version must be uploaded to Payhip before claiming customers receive it.
 
 ## 5. Business Ideas & Side Hustle Starter Kit — CAD $19
 **Lead hook:** **Need an extra income stream but don't know what business to start?**

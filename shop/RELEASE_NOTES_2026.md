@@ -9,7 +9,7 @@
 | Canadian_Budget_and_Debt_Payoff_Planner_2026_RESOURCE_EDITION.pdf | 20 | $11 | Worked budgeting and debt strategy examples, named FCAC resources, companion editable Excel expense/debt tracker. |
 | First_Home_Financial_Planning_Toolkit_2026_RESOURCE_EDITION.pdf | 22 | $19 | Clickable VeeLegacy mortgage calculator, tax-smart FHSA/RRSP/HBP worked example, Ontario land transfer tax scenario, HBP/FHSA differences, closing-cost checklist. |
 | Newcomers_Financial_Starter_Guide_2026_RESOURCE_EDITION.pdf | 34 | $19 | Practical fictional newcomer scenarios, bank fee/eligibility questions and government links; retains bank/provider comparisons. |
-| VeeLegacy_Canadian_and_International_Job_Search_Toolkit_2026.pdf | 52 | $19 | Preserves 86 Canadian career destinations plus 14 pages of international applicant resources, official sponsor/visa pathways, remote-job filters, country playbooks, recruiter scripts, scams and a 30-day plan. **Awaiting Payhip upload.** |
+| VeeLegacy_Canadian_Job_Search_In_Canada_and_From_Abroad_2026.pdf | 52 | $19 | Preserves 86 Canadian career destinations plus 14 pages specifically about Canadian jobs accepting applicants outside Canada, Job Bank foreign-candidate filters, LMIA status, official Canadian work-permit documents, credentials, employer outreach, scam protection and a 30-day plan. **Awaiting Payhip upload.** |
 | Business_Ideas_and_Side_Hustles_Starter_Kit_2026_RESOURCE_EDITION.pdf | 36 | $19 | 79 ideas plus actionable blueprints for cleaning, Alibaba sourcing, samples, supplier negotiations, ecommerce unit economics, UGC, seasonal services, creator outreach and business registration. |
 | FREE_Financial_Literacy_and_Wealth_Foundations_2026_RESOURCE_EDITION.pdf | 18 | FREE | FCAC/CRA/CMHC links and financial review checklist. |
 
@@ -36,8 +36,8 @@ This is a public GitHub Pages repository. Putting the full saleable PDFs here wo
 6. Check compliance requirements applicable to the seller's regulated financial services activities.
 
 **No purchase is currently available through the GitHub Pages store preview.**
-## October 24 international careers expansion
+## October 24 Canadian jobs from abroad expansion
 
-The **Canadian & International Job Search Toolkit** has been revised to 52 pages. The latest customer PDF and job product ZIP are in the seller's private upload package; the five-toolkit bundle ZIP has also been refreshed. The website now announces the international edition but sends visitors to information rather than implying the new version is already delivered by Payhip. Once uploaded and tested, update the existing Payhip product page and link the listing directly from `/shop/`.
+The **Canadian Job Search: In Canada & From Abroad** has been revised to 52 pages, featuring only Canadian job opportunities. The latest customer PDF and job product ZIP are in the seller's private upload package; the five-toolkit bundle ZIP has also been refreshed. The website now announces the Canada-only overseas applicants edition but sends visitors to information rather than implying the new version is already delivered by Payhip. Once uploaded and tested, update the existing Payhip product page and link the listing directly from `/shop/`.
 
 New public files: `shop/INTERNATIONAL_JOB_PAYHIP_LISTING_2026.md` and updated `assets/shop-covers/jobs.svg`, `shop/index.html`, `assets/shop-premium.css`, `links/index.html`.

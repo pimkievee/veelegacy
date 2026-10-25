@@ -26,7 +26,7 @@
 **CTA:** Start your first 30 days with a clearer plan.
 **Eligibility note:** Benefits and account options depend on residency, status, income and other conditions.
 
-## 4. Canadian Job Search: In Canada & From Abroad — CAD $19
+## 4. Canadian Job Search: In Canada & From Abroad — CAD $29
 **Lead hook:** **Looking for Canadian jobs while you live outside Canada? Stop applying to vacancies that only hire people already authorized to work.**
 **Short card:** Find Canadian jobs open to international candidates, learn actual employer and work-permit requirements, and improve your resume, ATS fit and interview preparation.
 **Description:** A 52-page Canada-only career guide combining 86 Canadian job destinations, resume/application tools, and 14 pages specifically for people applying to Canadian employers from overseas. Walk through Job Bank's foreign-candidate filter, LMIA requested vs approved, eligibility and credentials, employer-specific work permits, AIP and community designated-employer pathways, truthful outreach messages and scam prevention.
@@ -46,10 +46,10 @@
 **Description:** The free 18-page VeeLegacy financial resource helps you understand everyday money decisions, plan your next steps and find official references for Canadian savings and financial planning accounts.
 **CTA:** Get my free guide.
 
-## Complete Digital Toolkit Bundle — CAD $69
-**Lead hook:** **Five practical guides. One fresh start. Save $18.**
+## Complete Digital Toolkit Bundle — CAD $89
+**Lead hook:** **Five practical guides. One fresh start. Save $8.**
 **Short card:** Your budget, first-home plan, newcomer roadmap, job search and side-hustle starter resources in one value bundle.
-**Description:** Get the five paid VeeLegacy guides together for CAD $69 instead of CAD $87 individually. Use the collection to plan spending and debt, explore home buying and eligible tax-saving programs, settle into Canadian financial systems, find job resources and prepare applications, or research a viable side hustle. Includes the companion budget workbook and career preparation bonus where supplied by the latest upload.
+**Description:** Get the five paid VeeLegacy guides together for CAD $89 instead of CAD $97 individually. Use the collection to plan spending and debt, explore home buying and eligible tax-saving programs, settle into Canadian financial systems, find job resources and prepare applications, or research a viable side hustle. Includes the companion budget workbook and career preparation bonus where supplied by the latest upload.
 **CTA:** Explore the complete collection.
 
 ## Before making these descriptions live in Payhip

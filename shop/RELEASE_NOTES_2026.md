@@ -9,14 +9,14 @@
 | Canadian_Budget_and_Debt_Payoff_Planner_2026_RESOURCE_EDITION.pdf | 20 | $11 | Worked budgeting and debt strategy examples, named FCAC resources, companion editable Excel expense/debt tracker. |
 | First_Home_Financial_Planning_Toolkit_2026_RESOURCE_EDITION.pdf | 22 | $19 | Clickable VeeLegacy mortgage calculator, tax-smart FHSA/RRSP/HBP worked example, Ontario land transfer tax scenario, HBP/FHSA differences, closing-cost checklist. |
 | Newcomers_Financial_Starter_Guide_2026_RESOURCE_EDITION.pdf | 34 | $19 | Practical fictional newcomer scenarios, bank fee/eligibility questions and government links; retains bank/provider comparisons. |
-| VeeLegacy_Canadian_Job_Search_In_Canada_and_From_Abroad_2026.pdf | 52 | $19 | Preserves 86 Canadian career destinations plus 14 pages specifically about Canadian jobs accepting applicants outside Canada, Job Bank foreign-candidate filters, LMIA status, official Canadian work-permit documents, credentials, employer outreach, scam protection and a 30-day plan. **Awaiting Payhip upload.** |
+| VeeLegacy_Canadian_Job_Search_In_Canada_and_From_Abroad_2026.pdf | 52 | $29 | Preserves 86 Canadian career destinations plus 14 pages specifically about Canadian jobs accepting applicants outside Canada, Job Bank foreign-candidate filters, LMIA status, official Canadian work-permit documents, credentials, employer outreach, scam protection and a 30-day plan. **Awaiting Payhip upload.** |
 | Business_Ideas_and_Side_Hustles_Starter_Kit_2026_RESOURCE_EDITION.pdf | 36 | $19 | 79 ideas plus actionable blueprints for cleaning, Alibaba sourcing, samples, supplier negotiations, ecommerce unit economics, UGC, seasonal services, creator outreach and business registration. |
 | FREE_Financial_Literacy_and_Wealth_Foundations_2026_RESOURCE_EDITION.pdf | 18 | FREE | FCAC/CRA/CMHC links and financial review checklist. |
 
 ## Seller bundles
 
-- All five paid PDFs purchased individually total **$87 CAD**.
-- Introductory five-paid-guide bundle suggested at **$69 CAD**.
+- All five paid PDFs purchased individually total **$97 CAD**.
+- Introductory five-paid-guide bundle suggested at **$89 CAD**.
 - Budget Planner customer ZIP includes the editable `VeeLegacy_Interactive_Budget_and_Debt_Tracker.xlsx` and starting instructions.
 - Job Search Toolkit customer ZIP includes the AI interview/career prompts bonus.
 - First Home PDF opens the public [mortgage calculator](https://veelegacy.ca/mortgage-calculator/).
@@ -41,3 +41,10 @@ This is a public GitHub Pages repository. Putting the full saleable PDFs here wo
 The **Canadian Job Search: In Canada & From Abroad** has been revised to 52 pages, featuring only Canadian job opportunities. The latest customer PDF and job product ZIP are in the seller's private upload package; the five-toolkit bundle ZIP has also been refreshed. The website now announces the Canada-only overseas applicants edition but sends visitors to information rather than implying the new version is already delivered by Payhip. Once uploaded and tested, update the existing Payhip product page and link the listing directly from `/shop/`.
 
 New public files: `shop/INTERNATIONAL_JOB_PAYHIP_LISTING_2026.md` and updated `assets/shop-covers/jobs.svg`, `shop/index.html`, `assets/shop-premium.css`, `links/index.html`.
+
+## Updated launch pricing
+
+- Canadian Job Search: In Canada & From Abroad: **$29 CAD** (formerly $19).
+- Other paid guides unchanged: Budget $11; First Home, Newcomer and Side Hustle each $19.
+- Five individual paid guides total **$97 CAD**; bundle **$89 CAD**, providing **$8 CAD savings**.
+- **Important:** Website-facing pricing is updated; Payhip checkout prices have not been changed through GitHub. The storefront bundle button is temporarily disabled until Payhip pricing and revised PDF delivery are confirmed.

@@ -164,3 +164,7 @@
 
 /* Keep the supplied portrait compact: the subject is the welcome, not a full-page photo. */
 @media(min-width:711px){.vs-portrait-wrap{max-width:250px}.vs-portrait-frame{aspect-ratio:.79 / 1}}
+
+/* Shop wordmark sizing: keep mobile header within narrow iPhone widths. */
+@media(max-width:470px){.vs-nav-inner{gap:5px}.vs-wordmark strong{font-size:17px}.vs-wordmark small{font-size:6px;letter-spacing:.11em}.vs-brand{gap:7px}.vs-brandmark{width:31px;height:31px}.vs-menu{gap:5px}.vs-menu .vs-shop-btn{padding:7px 8px;font-size:9px;gap:4px}.vs-menu .vs-shop-btn svg{width:13px;height:13px}}
+@media(max-width:350px){.vs-wordmark strong{font-size:15px}.vs-menu .vs-shop-btn{font-size:8px;padding:7px 6px}}

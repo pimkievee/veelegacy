@@ -168,3 +168,26 @@
 /* Shop wordmark sizing: keep mobile header within narrow iPhone widths. */
 @media(max-width:470px){.vs-nav-inner{gap:5px}.vs-wordmark strong{font-size:17px}.vs-wordmark small{font-size:6px;letter-spacing:.11em}.vs-brand{gap:7px}.vs-brandmark{width:31px;height:31px}.vs-menu{gap:5px}.vs-menu .vs-shop-btn{padding:7px 8px;font-size:9px;gap:4px}.vs-menu .vs-shop-btn svg{width:13px;height:13px}}
 @media(max-width:350px){.vs-wordmark strong{font-size:15px}.vs-menu .vs-shop-btn{font-size:8px;padding:7px 6px}}
+
+/* Restore original clarity-session image with a proper mobile photo layout. */
+.vs-clarity-portrait img{object-position:center 26%}
+@media(min-width:711px) and (max-width:950px){
+  .vs-clarity{grid-template-columns:minmax(0,1fr) minmax(200px,.62fr);gap:10px}
+  .vs-clarity-content{padding:24px 20px}
+}
+@media(max-width:710px){
+  .vs-clarity{grid-template-columns:minmax(0,1fr);gap:0;margin-top:19px}
+  .vs-clarity-visual{order:-1;width:100%;height:230px;min-height:0;align-self:start}
+  .vs-clarity-portrait img{object-fit:cover;object-position:center 29%}
+  .vs-clarity-content{padding:20px 20px 22px}
+  .vs-clarity h3{font-size:clamp(25px,6.4vw,31px)}
+  .vs-clarity-content>p:not(.vs-overline){font-size:12px;line-height:1.65}
+  .vs-clarity-topics span{font-size:10px;padding:6px 9px}
+  .vs-clarity-photo-label{display:block;margin:0 0 12px;font-size:11px}
+  .vs-clarity-actions .vs-clarity-note{font-size:10px;line-height:1.5}
+}
+@media(max-width:390px){
+  .vs-clarity{grid-template-columns:minmax(0,1fr)}
+  .vs-clarity-visual{height:215px;min-height:0}
+  .vs-clarity-content{padding:17px 17px 20px}
+}

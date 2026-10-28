@@ -161,3 +161,6 @@
 .vs-clarity-visual img{object-position:50% 20%}
 }
 @media(max-width:390px){.vs-hero h1{font-size:30px}.vs-hero .vs-hero-intro{font-size:15px}.vs-hero-actions .vs-button{font-size:10px}.vs-hero-benefits{gap:8px}.vs-founder-card{padding:19px 16px}}
+
+/* Keep the supplied portrait compact: the subject is the welcome, not a full-page photo. */
+@media(min-width:711px){.vs-portrait-wrap{max-width:250px}.vs-portrait-frame{aspect-ratio:.79 / 1}}

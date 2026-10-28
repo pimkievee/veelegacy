@@ -3487,28 +3487,3 @@ h3 { font-size: 19px; }
   .vl-contact-option { padding: 22px 20px; }
   .vl-contact-option .btn { width: 100%; }
 }
-
-/* Valerie's personal introduction: homepage and About */
-.vl-meet-valerie{background:linear-gradient(120deg,#fff8f7 0%,#f9e7ef 58%,#fffaf5 100%);padding:clamp(40px,6vw,78px) 0;border-top:1px solid #eedfe5;border-bottom:1px solid #eedfe5}
-.vl-meet-shell{width:min(1090px,calc(100% - 44px));margin:auto;display:grid;grid-template-columns:minmax(220px,.75fr) minmax(0,1.25fr);align-items:center;gap:clamp(26px,5vw,75px)}
-.vl-meet-photo{position:relative;border-radius:18px;overflow:hidden;border:7px solid rgba(255,255,255,.9);box-shadow:0 22px 50px rgba(89,49,74,.14);background:#ecd6df}
-.vl-meet-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 32%}
-.vl-meet-photo span{position:absolute;left:12px;right:12px;bottom:13px;padding:11px;background:rgba(255,248,250,.91);border-radius:8px;text-align:center;color:#553d50;font-weight:750;font-size:10px;letter-spacing:.15em}
-.vl-meet-copy h2{font:500 clamp(30px,4.2vw,51px)/1.13 Georgia,serif;margin:5px 0 15px;color:#3e273f;letter-spacing:-.04em}
-.vl-meet-copy p{color:#645464;font-size:clamp(13px,1.15vw,15px);line-height:1.76;margin:0 0 13px}
-.vl-meet-copy .vl-meet-hook{font:500 clamp(18px,2vw,24px)/1.45 Georgia,serif;color:#51334e;margin:0 0 19px}
-.vl-meet-actions{display:flex;gap:12px 18px;align-items:center;flex-wrap:wrap;margin:24px 0 12px}
-.vl-meet-button{display:inline-flex;align-items:center;gap:13px;border-radius:999px;background:#4c2d4c;color:#fff;padding:12px 21px;font-size:12px;font-weight:700}
-.vl-meet-text-link{text-decoration:underline;text-underline-offset:4px;font-weight:700;color:#5b3c58;font-size:12px}
-.vl-meet-copy .vl-meet-footnote{font-size:11px;color:#887784;margin-top:13px}
-.vl-about-founder{align-items:start}
-.vl-about-founder .vl-about-story h1{font-size:clamp(29px,3.4vw,44px);line-height:1.17;margin-bottom:18px}
-.vl-about-story a:not(.btn){text-decoration:underline;text-underline-offset:3px;color:#5c3460}
-.vl-about-story p{max-width:670px}
-.vl-about-links{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:21px}
-.vl-about-small{font-size:11px;color:#877883;margin-top:18px}
-.vl-about-portrait{background:linear-gradient(135deg,#f9e6ee,#fffaf6);padding:10px;border-radius:17px}
-.vl-about-portrait img{aspect-ratio:3/4;width:100%;object-fit:cover;object-position:center 29%;border-radius:9px}
-.vl-about-portrait p{font:italic 16px Georgia,serif;color:#6a4c62;text-align:center;padding:16px 10px 5px;margin:0}
-@media(max-width:740px){.vl-meet-shell{grid-template-columns:1fr;gap:25px}.vl-meet-photo{max-width:350px;margin:auto;width:100%}.vl-meet-valerie{padding:37px 0}.vl-meet-copy{max-width:600px;margin:auto}.vl-about-portrait{max-width:440px;margin:auto}.vl-about-links .btn{font-size:12px}}
-@media(max-width:420px){.vl-meet-shell{width:calc(100% - 32px)}.vl-meet-photo{max-width:260px}.vl-meet-copy h2{font-size:33px}.vl-meet-copy p{font-size:13px}.vl-meet-actions{flex-direction:column;align-items:stretch}.vl-meet-button{text-align:center;justify-content:center}.vl-meet-text-link{text-align:center}}

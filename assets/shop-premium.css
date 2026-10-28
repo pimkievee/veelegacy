@@ -91,3 +91,73 @@
   .vs-founder-copy h2{font-size:28px}
   .vs-founder-copy .vs-founder-lead{font-size:16px}
 }
+
+/* Shop VeeLegacy • Personal story and purpose-first merchandising (October 2026).
+   Only affects /shop/, never the separate financial/insurance homepage. */
+.vs-hero{background:radial-gradient(circle at 89% 27%,#f6d7e6 0,transparent 43%),linear-gradient(140deg,#fff9f7 2%,#fff5f7 60%,#fcf0f3 100%)}
+.vs-hero-inner{min-height:450px;grid-template-columns:minmax(0,1.18fr) minmax(0,.82fr);gap:30px;padding-top:38px;padding-bottom:38px}
+.vs-hero-copy{min-width:0}
+.vs-hero h1{font-size:clamp(35px,4.15vw,53px);line-height:1.105;max-width:650px;letter-spacing:-.049em}
+.vs-hero h1 em{font-style:italic;font-weight:400;color:#9a617e}
+.vs-hero .vs-hero-intro{font:500 clamp(16px,1.75vw,21px)/1.5 Georgia,"Times New Roman",serif;color:#4c3449;max-width:550px;margin-top:16px}
+.vs-hero .vs-hero-intro strong{color:#773c65;font-weight:700}
+.vs-hero .lead{font-size:13px;margin-top:12px;max-width:590px;color:#6c5b66;line-height:1.73}
+.vs-hero-actions{margin-top:21px}
+.vs-hero-benefits{margin-top:22px}
+.vs-portrait-wrap{max-width:325px;width:100%;margin:auto}
+.vs-portrait-frame{aspect-ratio:0.88 / 1;border-radius:165px 165px 21px 21px;background:#efd1df}
+.vs-portrait-frame img{object-position:50% 31%;object-fit:cover}
+.vs-photo-seal{bottom:17px;left:-12px;font-size:12px;padding:11px 17px;transform:rotate(-4deg)}
+.vs-founder{padding:29px 0 17px;background:linear-gradient(130deg,#fff8fa,#fff9f8)}
+.vs-founder-card{grid-template-columns:minmax(0,172px) minmax(0,1fr);gap:31px;align-items:center;border-color:#f0dce5;border-radius:25px;background:linear-gradient(135deg,rgba(255,255,255,.97),rgba(255,246,250,.96));padding:25px 32px}
+.vs-founder-photo{max-width:172px;aspect-ratio:.78/1;border-radius:85px 85px 13px 13px}
+.vs-founder-photo img{object-position:50% 24%}
+.vs-founder-copy h2{font-size:clamp(26px,2.8vw,36px);line-height:1.19;margin-top:9px}
+.vs-founder-copy .vs-founder-lead{font-size:clamp(14px,1.45vw,18px);line-height:1.5;margin-bottom:10px}
+.vs-founder-copy>p:not(.vs-overline):not(.vs-founder-lead):not(.vs-founder-note){font-size:12.5px;max-width:710px;line-height:1.7;margin:0 0 9px}
+.vs-founder-actions{margin:17px 0 9px}
+.vs-start{background:#fff9f9;padding:24px 0 27px}
+.vs-start h2{font:500 clamp(25px,2.6vw,35px)/1.18 Georgia,"Times New Roman",serif;letter-spacing:-.042em;margin:8px 0 18px;color:#3c2543}
+.vs-start-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.vs-start-card{display:flex;flex-direction:column;gap:9px;text-decoration:none!important;border:1px solid #ecd9e3;border-radius:19px;padding:21px 20px;background:linear-gradient(145deg,#fffdfc,#fff5f8);box-shadow:0 8px 18px rgba(83,51,73,.045);min-width:0;transition:transform .16s,box-shadow .16s}
+.vs-start-card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(83,51,73,.10)}
+.vs-start-icon{font-size:11px;color:#9e708a;letter-spacing:.13em;font-weight:800}
+.vs-start-card strong{font:500 21px/1.22 Georgia,"Times New Roman",serif;color:#492e49;letter-spacing:-.03em}
+.vs-start-card>span:not(.vs-start-icon):not(.vs-start-arrow){font-size:11.5px;line-height:1.62;color:#746675;flex:1}
+.vs-start-arrow{font-size:11px;font-weight:760;color:#915c7d;margin-top:7px}
+.vs-clarity{background:linear-gradient(125deg,#fffafc,#f9ebf1)}
+.vs-clarity .vs-clarity-content>p:not(.vs-overline){line-height:1.72}
+.vs-clarity-portrait img{object-position:50% 24%}
+.vs-clarity-photo-label{font-size:11px}
+@media(max-width:900px){
+.vs-hero-inner{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}
+.vs-hero h1{font-size:39px}
+.vs-founder-card{gap:21px}
+}
+@media(max-width:710px){
+.vs-hero-inner{display:flex;flex-direction:column;gap:14px;min-height:0;padding:25px 0 29px}
+.vs-portrait-wrap{order:-1;max-width:165px;width:165px;margin:0 auto}
+.vs-portrait-frame{width:165px;height:160px;aspect-ratio:auto;border-radius:85px 85px 20px 20px;outline-width:5px}
+.vs-portrait-frame img{width:100%;height:100%;object-position:center 22%}
+.vs-photo-seal{display:block;bottom:-8px;left:-20px;font-size:10px;padding:7px 10px}
+.vs-hero-copy{text-align:center;width:100%}
+.vs-hero h1{font-size:clamp(31px,7.3vw,39px);max-width:530px;margin:12px auto 0}
+.vs-hero .vs-hero-intro{font-size:16px;max-width:490px;margin:13px auto 0}
+.vs-hero .lead{font-size:12px;margin:11px auto 0;max-width:515px}
+.vs-hero-actions{justify-content:center;margin-top:18px}
+.vs-hero-benefits{justify-content:center;margin-top:17px}
+.vs-founder{padding:18px 0 10px}
+.vs-founder-card{gap:0;align-items:stretch;padding:23px 20px}
+.vs-founder-photo{display:none}
+.vs-founder-copy h2{font-size:28px}
+.vs-founder-copy>p:not(.vs-overline):not(.vs-founder-lead):not(.vs-founder-note){font-size:12px}
+.vs-start{padding:23px 0}
+.vs-start h2{font-size:27px}
+.vs-start-grid{grid-template-columns:1fr;gap:10px}
+.vs-start-card{padding:15px 17px;gap:5px;border-radius:15px}
+.vs-start-card strong{font-size:19px}
+.vs-start-card>span:not(.vs-start-icon):not(.vs-start-arrow){font-size:11px}
+.vs-start-arrow{margin-top:3px}
+.vs-clarity-visual img{object-position:50% 20%}
+}
+@media(max-width:390px){.vs-hero h1{font-size:30px}.vs-hero .vs-hero-intro{font-size:15px}.vs-hero-actions .vs-button{font-size:10px}.vs-hero-benefits{gap:8px}.vs-founder-card{padding:19px 16px}}

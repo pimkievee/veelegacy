@@ -191,3 +191,43 @@
   .vs-clarity-visual{height:215px;min-height:0}
   .vs-clarity-content{padding:17px 17px 20px}
 }
+
+/* October 28 — Founder portrait crop correction.
+   The original photo is a tall 312x710 portrait: a squat image frame
+   crops the hair and shoulders. Keep the image upright and top-aligned.
+   Same original photo; no retouching, stretching or face modification. */
+.vs-portrait-frame img{
+  object-fit:cover;
+  object-position:50% 0%;
+}
+@media (min-width:711px){
+  .vs-portrait-wrap{max-width:230px}
+  .vs-portrait-frame{
+    width:100%;
+    height:auto;
+    aspect-ratio:.60 / 1;
+    border-radius:125px 125px 22px 22px;
+  }
+  .vs-founder-photo img{object-position:50% 0%}
+}
+@media (max-width:710px){
+  .vs-hero-inner{gap:18px}
+  .vs-portrait-wrap{
+    width:clamp(170px,49vw,195px);
+    max-width:195px;
+    margin:0 auto;
+  }
+  .vs-portrait-frame{
+    width:100%;
+    height:auto;
+    aspect-ratio:.68 / 1;
+    border-radius:110px 110px 18px 18px;
+    outline-width:5px;
+  }
+  .vs-portrait-frame img{object-position:center top}
+  .vs-photo-seal{bottom:4px;left:-12px}
+}
+@media (max-width:360px){
+  .vs-portrait-wrap{width:166px}
+  .vs-portrait-frame{aspect-ratio:.68 / 1}
+}

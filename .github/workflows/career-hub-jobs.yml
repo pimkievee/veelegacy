@@ -22,6 +22,8 @@ jobs:
       - name: Run importer tests
         run: python -m unittest discover -s tests -v
       - name: Import approved job feeds
+        id: import
+        continue-on-error: true
         run: python scripts/update_jobs.py
       - name: Commit updated job data
         run: |
@@ -32,3 +34,8 @@ jobs:
             git commit -m "Update Career Hub job listings"
             git push origin HEAD:feature/veelegacy-career-hub
           fi
+      - name: Report failed feeds after committing cleanup
+        if: steps.import.outcome == 'failure'
+        run: |
+          echo "One or more feeds failed. Expired listings were still cleaned up." >&2
+          exit 1

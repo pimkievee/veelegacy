@@ -40,7 +40,7 @@ function render(){
  const card=document.createElement('article');card.className='listing';
  const h=document.createElement('h3');h.textContent=j.title;
  const meta=document.createElement('div');meta.className='job-meta';
- const info=[['Employer',j.company],['Location',j.location],['Salary',j.pay||j.salary||'Not published'],['Job type',j.employment_type||j.employmentType||'Check original posting'],['Work arrangement',j.work_arrangement||'Check original posting'],['Closing date',j.expires_at||j.deadline||'Not provided']];
+ const arrangement=String(j.work_arrangement||j.workArrangement||'').trim()||(/\bremote\b/i.test(j.title+' '+j.location)?'Remote':/\bhybrid\b/i.test(j.title+' '+j.location)?'Hybrid':/\bon.site\b/i.test(j.title+' '+j.location)?'On-site':'');const jobType=String(j.employment_type||j.employmentType||'').trim();const info=[['Employer',j.company],['Location',j.location],['Salary',j.pay||j.salary||'Not published'],...(jobType?[['Employment type',jobType]]:[]),...(arrangement?[['Work arrangement',arrangement]]:[]),...(j.expires_at||j.deadline?[['Closing date',j.expires_at||j.deadline]]:[])];
  info.forEach(([label,value])=>{const cell=document.createElement('div');const strong=document.createElement('strong');strong.textContent=label;const span=document.createElement('span');span.textContent=value||'Not provided';cell.append(strong,span);meta.append(cell);});
  const heading=document.createElement('div');heading.className='job-detail-heading';heading.textContent='Job overview';
  const desc=document.createElement('p');desc.className='job-description';desc.textContent=j.description||'The employer has not provided a verified description for this listing. Open the official posting to review duties and responsibilities.';

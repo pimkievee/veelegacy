@@ -87,7 +87,7 @@ def read_existing():
         return []
 
 def save(jobs):
-    OUTPUT.write_text(json.dumps(sorted(jobs, key=lambda x: (x.get("company", ""), x.get("title", ""))), ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    OUTPUT.write_text(json.dumps(sorted(jobs, key=lambda x: (x.get("company", ""), x.get("title", ""))), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 def main():
     now = dt.datetime.now(dt.timezone.utc)

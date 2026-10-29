@@ -4,7 +4,6 @@
 No sources are enabled by default. Configure jobs/sources.json only after
 confirming permission to republish job summaries and external application links.
 """
-import datetime as dt
 import html
 import json
 import pathlib
@@ -32,7 +31,7 @@ def normalize(raw, source):
     title = text(raw.get("title") or raw.get("text"))
     company = text(source["company"])
     url = raw.get("absolute_url") or raw.get("hostedUrl") or raw.get("applyUrl")
-    if not isinstance(url, str) or urllib.parse.urlparse(url).scheme != "https":
+    if not isinstance(url, str) or urllib.parse.urlparse(url).scheme != "https" or not urllib.parse.urlparse(url).hostname:
         return None
     location = raw.get("location") or raw.get("categories", {}).get("location")
     if isinstance(location, dict):
@@ -62,6 +61,14 @@ def normalize(raw, source):
 def main():
     config = json.loads(SOURCES.read_text(encoding="utf-8"))
     sources = config.get("sources", [])
+    for source in sources:
+        if source.get("approved_for_republication"):
+            if not all(source.get(field) for field in ("id", "company", "provider", "board_token", "permission_reference")):
+                print("Approved source missing required details or permission reference.", file=sys.stderr)
+                return 1
+            if source["provider"] not in ("greenhouse", "lever"):
+                print("Unsupported approved source provider.", file=sys.stderr)
+                return 1
     if not sources:
         print("No approved sources configured; preserving existing job data.")
         return 0

@@ -31,7 +31,7 @@ class ImportTests(unittest.TestCase):
         self.assertIsNone(mod.normalize({"title":"Job","absolute_url":"javascript:alert(1)"}, source))
         self.assertIsNone(mod.normalize({"title":"Job","absolute_url":"https:///bad"}, source))
 
-    def test_no_sources_preserves_data(self):
+    def test_no_sources_removes_unapproved_data(self):
         with tempfile.TemporaryDirectory() as temp:
             root=pathlib.Path(temp)
             sources=root/"sources.json"
@@ -40,7 +40,7 @@ class ImportTests(unittest.TestCase):
             output.write_text('[{"existing":true}]',encoding="utf-8")
             with patch.object(mod,"SOURCES",sources), patch.object(mod,"OUTPUT",output):
                 self.assertEqual(mod.main(),0)
-            self.assertEqual(output.read_text(encoding="utf-8"),'[{"existing":true}]')
+            self.assertEqual(__import__('json').loads(output.read_text(encoding='utf-8')),[])
 
     def test_approved_source_requires_permission_reference(self):
         with tempfile.TemporaryDirectory() as temp:

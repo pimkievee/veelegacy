@@ -39,7 +39,7 @@ function showJobDetail(j){
  card.append(h,meta);
  for(const [title,value] of [['Job overview',j.description],['Qualifications and requirements',j.requirements]]){if(!value)continue;const head=document.createElement('h3');head.textContent=title;const p=document.createElement('p');p.textContent=value;card.append(head,p);}
  if(j.url&&!j.source_url){const apply=document.createElement('a');apply.className='apply-now';apply.textContent='Apply Now';apply.href=j.url;apply.target='_blank';apply.rel='noopener noreferrer';card.append(apply);}
- else {const msg=document.createElement('p');msg.textContent='Direct application link is being confirmed.';card.append(msg);}
+ else if(j.source_url){const a=document.createElement('a');a.className='apply-now';a.textContent='Find this posting on Job Bank';a.href=j.source_url;a.target='_blank';a.rel='noopener noreferrer';card.append(a);}
  el.append(back,card);
 }
 function openJob(j){history.pushState({job:jobKey(j)},'',location.pathname+'?job='+encodeURIComponent(jobKey(j))+'#explore');showJobDetail(j);document.getElementById('explore').scrollIntoView({behavior:'smooth'});}

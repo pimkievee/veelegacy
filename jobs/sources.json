@@ -1,0 +1,4 @@
+{
+  "description": "Only enable feeds after confirming the publisher authorizes republishing job summaries and links. Employer-specific board tokens are not credentials.",
+  "sources": []
+}

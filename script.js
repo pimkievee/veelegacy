@@ -150,10 +150,6 @@ if (!reduceTextMotion && "IntersectionObserver" in window) {
   root.className = "vl-contact";
   root.setAttribute("aria-label", "Contact VeeLegacy");
   root.innerHTML = `
-    <div class="vl-contact-teaser" role="status">
-      Have a question? I'm here to help you find your next step.
-      <button type="button" class="vl-teaser-x" aria-label="Dismiss welcome message">×</button>
-    </div>
     <div class="vl-contact-panel" id="veelegacy-contact-panel" aria-label="Ask VeeLegacy a question">
       <div class="vl-contact-panel-header">
         <img src="/assets/profile.jpg" alt="" width="47" height="47" decoding="async">
@@ -187,12 +183,7 @@ if (!reduceTextMotion && "IntersectionObserver" in window) {
   const form = root.querySelector(".vl-contact-form");
   const status = root.querySelector(".vl-contact-status");
   const submit = root.querySelector(".vl-contact-submit");
-  const hideTeaser = () => {
-    root.classList.remove("show-teaser");
-    try { sessionStorage.setItem("vl-contact-teaser", "seen"); } catch (_) {}
-  };
   const openPanel = () => {
-    hideTeaser();
     root.classList.add("is-open");
     launcher.setAttribute("aria-expanded", "true");
     panel.querySelector('input[name="fullName"]').focus();
@@ -207,20 +198,12 @@ if (!reduceTextMotion && "IntersectionObserver" in window) {
     else openPanel();
   });
   close.addEventListener("click", closePanel);
-  root.querySelector(".vl-teaser-x").addEventListener("click", hideTeaser);
   document.querySelectorAll("[data-open-contact-widget]").forEach((button) => {
     button.addEventListener("click", openPanel);
   });
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape" && root.classList.contains("is-open")) closePanel();
   });
-  let alreadySeen = false;
-  try { alreadySeen = sessionStorage.getItem("vl-contact-teaser") === "seen"; } catch (_) {}
-  if (!alreadySeen) {
-    window.setTimeout(() => {
-      if (!root.classList.contains("is-open")) root.classList.add("show-teaser");
-    }, 1700);
-  }
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
     status.hidden = true;

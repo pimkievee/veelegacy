@@ -3433,16 +3433,6 @@ h3 { font-size: 19px; }
 .vl-contact-submit:disabled { opacity: .65; cursor: wait; }
 .vl-contact-status { margin: 0; font-size: 12px; color: var(--purple); line-height: 1.5; }
 .vl-contact-note { margin: 0; font-size: 10.5px; line-height: 1.5; color: var(--muted); }
-.vl-contact-teaser {
-  position: absolute; right: 0; bottom: 73px; width: min(265px, calc(100vw - 30px));
-  padding: 13px 32px 13px 15px; border: 1px solid var(--line); border-radius: 14px;
-  background: white; color: var(--navy); box-shadow: 0 10px 34px rgba(35,13,56,.14);
-  font-size: 12px; line-height: 1.5; opacity: 0; visibility: hidden; pointer-events: none;
-  transform: translateY(10px); transition: opacity .25s ease, transform .25s ease, visibility .25s ease;
-}
-.vl-contact.show-teaser:not(.is-open) .vl-contact-teaser { opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0); }
-.vl-teaser-x { position: absolute; right: 7px; top: 6px; padding: 3px; border: none; background: transparent; font-size: 17px; color: var(--muted); cursor: pointer; }
-.vl-contact-teaser::after { content: ""; position: absolute; right: 35px; bottom: -7px; width: 12px; height: 12px; transform: rotate(45deg); background: white; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 @media (max-width: 760px) {
   .premium-footer-grid { grid-template-columns: 1fr 1fr; gap: 25px; }
   .premium-footer-brand { grid-column: 1 / -1; }
@@ -3464,7 +3454,7 @@ h3 { font-size: 19px; }
   .vl-contact-panel { bottom: 66px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .vl-contact-panel, .vl-contact-teaser, .vl-contact-launch { transition: none; }
+  .vl-contact-panel, .vl-contact-launch { transition: none; }
 }
 
 

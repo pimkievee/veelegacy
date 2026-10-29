@@ -8,7 +8,7 @@
 .steps,.source links{display:grid;grid template columns:repeat(3,1fr);gap:18px}.step,.source links a{background:white;border:1px solid var(--line);border radius:15px;padding:23px}.step h3,.source links a{color:var(--purple)}.step p,.source links small{color:var(--muted);line height:1.6}.source links small{display:block;font weight:400;margin top:8px}.disclaimer{color:var(--muted);font size:13px;line height:1.6}@media(max width:760px){.steps,.source links{grid template columns:1fr}}.job toolbar{display:flex;gap:12px;flex wrap:wrap;align items:center;justify content:space between}.job toolbar select{padding:12px;border:1px solid var(--line);border radius:10px;background:white}.listing{margin bottom:12px}.listing h3{margin:0 0 8px}.listing p{color:var(--muted)}.listing actions{display:flex;gap:12px;align items:center;flex wrap:wrap}.listing actions a{color:#87416b;font weight:700}.save btn{background:#fff;color:var(--purple);border:1px solid #d9bfd0;padding:10px 15px}.save btn[aria pressed=true]{background:#f7e7ee}.tabs{display:flex;gap:10px;margin:16px 0}.tabs button{background:white;color:var(--purple);border:1px solid var(--line)}.tabs button[aria pressed=true]{background:var(--purple);color:white}.count{color:var(--muted);font size:14px}
 /* Job detail cards */
 .listing{padding:25px;margin-bottom:18px;border-radius:16px;overflow:hidden}.listing h3{font:700 24px/1.25 Georgia,serif;color:var(--purple);margin:0 0 12px}.job-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0}.job-meta div{background:#fff8fb;border:1px solid var(--line);border-radius:10px;padding:12px;min-width:0}.job-meta strong{display:block;color:var(--purple);font-size:12px;margin-bottom:5px}.job-meta span{display:block;font-size:14px;overflow-wrap:anywhere}.job-detail-heading{font-weight:800;color:var(--purple);margin:18px 0 6px}.job-description{line-height:1.7;margin:0 0 12px;color:var(--ink)}.listing-actions{display:flex;align-items:center;gap:12px;margin-top:22px}.listing-actions .apply-now{display:inline-flex;align-items:center;justify-content:center;background:var(--purple);color:#fff;border-radius:10px;padding:14px 24px;text-decoration:none;font-weight:800;min-height:48px}.listing-actions .save-btn{background:#fff;color:var(--purple);border:1px solid #d9bfd0;border-radius:10px;min-height:48px;padding:12px 16px;white-space:nowrap}.job-disclaimer{font-size:12px;color:var(--muted);margin-top:13px;line-height:1.5}@media(max-width:480px){.listing{padding:19px}.job-meta{grid-template-columns:1fr 1fr;gap:8px}.listing-actions{flex-wrap:wrap}.listing-actions .apply-now{flex:1 1 100%}.listing-actions .save-btn{flex:1 1 100%}}
-</style></head><body>
+\n#results .listing h3 a,#results .listing h3 a:hover,#results .listing h3 a:focus{text-decoration:none!important;color:var(--purple)}\n</style></head><body>
 <header class="top"><nav class="wrap nav"><a class="brand" href="/"><img src="/assets/logo-transparent.png" alt="">VeeLegacy <span style="font-weight:500">Career Hub</span></a><div class="links"><a href="#explore">Explore Jobs</a><a href="#abroad">Apply From Abroad</a><a href="#tools">Application Tools</a><a href="#resources">Career Resources</a><a class="pill" href="/shop/">Career Guides</a></div></nav></header>
 <main><section class="hero"><div class="wrap"><div class="eyebrow">Canada · International · Remote</div><h1>Your next opportunity <em>starts here.</em></h1><p>Discover career opportunities in Canada and beyond. Explore jobs across technology, healthcare, social services, government, skilled trades and more.</p><form class="search" id="searchForm"><input id="keyword" aria-label="Job keyword" placeholder="Job title, skill or company"><select id="region" aria-label="Location"><option value="">All locations</option><option value="Canada">Canada</option><option value="International">International</option><option value="Remote">Remote</option></select><button type="submit">Search Jobs →</button></form><p class="note">Free job discovery • Always apply through verified employer links • Never pay for a job offer</p></div></section>
 <section class="section"><div class="wrap"><div class="eyebrow">Find your field</div><h2>Explore careers by category</h2><p class="sub">From your first job to your next big career move.</p><div class="categories" id="categories">
@@ -30,7 +30,7 @@ function persist(){try{localStorage.setItem(storeKey,JSON.stringify([...saved]))
 function showJobDetail(j){
  const el=document.getElementById('results');el.replaceChildren();
  document.getElementById('resultCount').textContent='Job details';
- const back=document.createElement('button');back.type='button';back.className='save-btn';back.textContent='← Back to jobs';back.addEventListener('click',()=>{history.pushState({},'',location.pathname+'#explore');render();});
+ const back=document.createElement('button');back.type='button';back.className='save-btn';back.textContent='← Back to jobs';back.addEventListener('click',()=>{clearSelectedJob();render();});
  const card=document.createElement('article');card.className='listing';
  const h=document.createElement('h2');h.textContent=j.title;
  const meta=document.createElement('div');meta.className='job-meta';
@@ -44,6 +44,7 @@ function showJobDetail(j){
 }
 function openJob(j){history.pushState({job:jobKey(j)},'',location.pathname+'?job='+encodeURIComponent(jobKey(j))+'#explore');showJobDetail(j);document.getElementById('explore').scrollIntoView({behavior:'smooth'});}
 window.addEventListener('popstate',()=>render());
+function clearSelectedJob(){if(new URLSearchParams(location.search).has('job'))history.replaceState({},'',location.pathname+'#explore');}
 function render(){
  const q=document.getElementById('keyword').value.trim().toLowerCase(),r=document.getElementById('region').value,c=document.getElementById('categoryFilter').value,e=document.getElementById('eligibilityFilter').value;
  const matches=[...jobs,...verifiedTechListings,...curatedListings()].filter(j=>(!savedOnly||saved.has(jobKey(j)))&&(!q||[j.title,j.company,j.location,j.description].join(' ').toLowerCase().includes(q))&&(!r||j.region===r||r==='Remote'&&/remote/i.test(j.location))&&(!c||j.category===c)&&(!e||j.eligibility===e));
@@ -61,16 +62,16 @@ function render(){
  const company=document.createElement('p');company.textContent=j.company;
  const summary=document.createElement('div');summary.className='job-meta';
  [['Location',j.location],['Salary',j.pay||j.salary],['Work arrangement',j.work_arrangement||j.workArrangement]].filter(x=>x[1]).forEach(([k,v])=>{const cell=document.createElement('div');const strong=document.createElement('strong');strong.textContent=k;const span=document.createElement('span');span.textContent=v;cell.append(strong,span);summary.append(cell);});
- const view=document.createElement('a');view.href=link.href;view.className='apply-now';view.textContent='View job details';view.addEventListener('click',e=>{e.preventDefault();openJob(j);});
+ const view=document.createElement('a');view.href=link.href;view.className='apply-now';view.textContent='Apply Now';view.addEventListener('click',e=>{e.preventDefault();openJob(j);});
  card.append(h,company,summary,view);el.append(card);
  });
 }
-document.getElementById('searchForm').addEventListener('submit',e=>{e.preventDefault();render();document.getElementById('explore').scrollIntoView({behavior:'smooth'});});
-document.querySelectorAll('.filters select').forEach(el=>el.addEventListener('change',render));
-document.getElementById('sortJobs').addEventListener('change',render);
-document.getElementById('allJobs').addEventListener('click',()=>{savedOnly=false;render();document.getElementById('explore').scrollIntoView({behavior:'smooth',block:'start'});});
-document.getElementById('savedJobs').addEventListener('click',()=>{savedOnly=true;render()});
-document.querySelectorAll('[data-category]').forEach(el=>el.addEventListener('click',()=>{savedOnly=false;document.getElementById('categoryFilter').value=el.dataset.category;render();document.getElementById('explore').scrollIntoView({behavior:'smooth'});}));
+document.getElementById('searchForm').addEventListener('submit',e=>{e.preventDefault();clearSelectedJob();render();document.getElementById('explore').scrollIntoView({behavior:'smooth'});});
+document.querySelectorAll('.filters select').forEach(el=>el.addEventListener('change',()=>{clearSelectedJob();render();}));
+document.getElementById('sortJobs').addEventListener('change',()=>{clearSelectedJob();render();});
+document.getElementById('allJobs').addEventListener('click',()=>{savedOnly=false;clearSelectedJob();render();document.getElementById('explore').scrollIntoView({behavior:'smooth',block:'start'});});
+document.getElementById('savedJobs').addEventListener('click',()=>{savedOnly=true;clearSelectedJob();render()});
+document.querySelectorAll('[data-category]').forEach(el=>el.addEventListener('click',()=>{savedOnly=false;document.getElementById('categoryFilter').value=el.dataset.category;clearSelectedJob();render();document.getElementById('explore').scrollIntoView({behavior:'smooth'});}));
 fetch('./jobs.json',{cache:'no-store'}).then(r=>r.ok?r.json():[]).then(data=>{if(Array.isArray(data))jobs=data.filter(j=>j&&j.title&&j.company&&j.url&&/^https:\/\//.test(j.url));render()}).catch(()=>render());
 
 </script></body></html>

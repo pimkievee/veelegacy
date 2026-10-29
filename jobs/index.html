@@ -27,9 +27,27 @@ const storeKey='veelegacy-career-saved-jobs-v1';
 try{const stored=JSON.parse(localStorage.getItem(storeKey)||'[]');if(Array.isArray(stored))saved=new Set(stored.filter(v=>typeof v==='string').slice(0,500));}catch(e){}
 function jobKey(j){return String(j.id||j.url);}
 function persist(){try{localStorage.setItem(storeKey,JSON.stringify([...saved]));}catch(e){}}
+function showJobDetail(j){
+ const el=document.getElementById('results');el.replaceChildren();
+ document.getElementById('resultCount').textContent='Job details';
+ const back=document.createElement('button');back.type='button';back.className='save-btn';back.textContent='← Back to jobs';back.addEventListener('click',()=>{history.pushState({},'',location.pathname+'#explore');render();});
+ const card=document.createElement('article');card.className='listing';
+ const h=document.createElement('h2');h.textContent=j.title;
+ const meta=document.createElement('div');meta.className='job-meta';
+ const fields=[['Employer',j.company],['Location',j.location],['Salary',j.pay||j.salary],['Employment type',j.employment_type||j.employmentType],['Work arrangement',j.work_arrangement||j.workArrangement],['Closing date',j.expires_at||j.deadline]];
+ fields.filter(x=>x[1]).forEach(([k,v])=>{const cell=document.createElement('div');const label=document.createElement('strong');label.textContent=k;const val=document.createElement('span');val.textContent=v;cell.append(label,val);meta.append(cell);});
+ card.append(h,meta);
+ for(const [title,value] of [['Job overview',j.description],['Qualifications and requirements',j.requirements]]){if(!value)continue;const head=document.createElement('h3');head.textContent=title;const p=document.createElement('p');p.textContent=value;card.append(head,p);}
+ if(j.url&&!j.source_url){const apply=document.createElement('a');apply.className='apply-now';apply.textContent='Apply Now';apply.href=j.url;apply.target='_blank';apply.rel='noopener noreferrer';card.append(apply);}
+ else {const msg=document.createElement('p');msg.textContent='Direct application link is being confirmed.';card.append(msg);}
+ el.append(back,card);
+}
+function openJob(j){history.pushState({job:jobKey(j)},'',location.pathname+'?job='+encodeURIComponent(jobKey(j))+'#explore');showJobDetail(j);document.getElementById('explore').scrollIntoView({behavior:'smooth'});}
+window.addEventListener('popstate',()=>render());
 function render(){
  const q=document.getElementById('keyword').value.trim().toLowerCase(),r=document.getElementById('region').value,c=document.getElementById('categoryFilter').value,e=document.getElementById('eligibilityFilter').value;
  const matches=[...jobs,...verifiedTechListings,...curatedListings()].filter(j=>(!savedOnly||saved.has(jobKey(j)))&&(!q||[j.title,j.company,j.location,j.description].join(' ').toLowerCase().includes(q))&&(!r||j.region===r||r==='Remote'&&/remote/i.test(j.location))&&(!c||j.category===c)&&(!e||j.eligibility===e));
+ const requested=new URLSearchParams(location.search).get('job');if(requested){const selected=[...jobs,...verifiedTechListings,...curatedListings()].find(j=>jobKey(j)===requested);if(selected){showJobDetail(selected);return;}}
  const sort=document.getElementById('sortJobs').value;
  matches.sort((a,b)=>sort==='title'?a.title.localeCompare(b.title):sort==='company'?a.company.localeCompare(b.company):(Date.parse(b.last_seen_at||0)||0)-(Date.parse(a.last_seen_at||0)||0));
  document.getElementById('savedCount').textContent='('+saved.size+')';
@@ -39,19 +57,12 @@ function render(){
  if(!matches.length){const d=document.createElement('div');d.className='empty';const strong=document.createElement('strong');strong.textContent=savedOnly?'No saved jobs yet':'No individual jobs available for these filters';const p=document.createElement('p');p.textContent=savedOnly?'Use Save for later on a job you are interested in.':'Try another category or clear your filters. Only individual job opportunities are shown here.';d.append(strong,p);el.append(d);return;}
  matches.forEach(j=>{
  const card=document.createElement('article');card.className='listing';
- const h=document.createElement('h3');h.textContent=j.title;
- const meta=document.createElement('div');meta.className='job-meta';
- const arrangement=String(j.work_arrangement||j.workArrangement||'').trim()||(/\bremote\b/i.test(j.title+' '+j.location)?'Remote':/\bhybrid\b/i.test(j.title+' '+j.location)?'Hybrid':/\bon.site\b/i.test(j.title+' '+j.location)?'On-site':'');const jobType=String(j.employment_type||j.employmentType||'').trim();const info=[['Employer',j.company],['Location',j.location],...(j.pay||j.salary?[['Salary',j.pay||j.salary]]:[]),...(jobType?[['Employment type',jobType]]:[]),...(arrangement?[['Work arrangement',arrangement]]:[]),...(j.expires_at||j.deadline?[['Closing date',j.expires_at||j.deadline]]:[])];
- info.forEach(([label,value])=>{const cell=document.createElement('div');const strong=document.createElement('strong');strong.textContent=label;const span=document.createElement('span');span.textContent=value;cell.append(strong,span);meta.append(cell);});
- const detailBlocks=[];
- if(j.description&&j.description.trim()){const heading=document.createElement('div');heading.className='job-detail-heading';heading.textContent='Job overview';const desc=document.createElement('p');desc.className='job-description';desc.textContent=j.description;detailBlocks.push(heading,desc);}
- if(j.requirements&&j.requirements.trim()){const heading=document.createElement('div');heading.className='job-detail-heading';heading.textContent='Qualifications and requirements';const req=document.createElement('p');req.className='job-description';req.textContent=j.requirements;detailBlocks.push(heading,req);}
- const actions=document.createElement('div');actions.className='listing-actions';
- const apply=document.createElement('a');apply.className='apply-now';apply.textContent=j.source_url?'Find exact posting on Job Bank':'Apply Now';apply.href=j.url||j.source_url;apply.target='_blank';apply.rel='noopener noreferrer';
- const save=document.createElement('button');save.className='save-btn';save.type='button';const key=jobKey(j);save.setAttribute('aria-pressed',String(saved.has(key)));save.textContent=saved.has(key)?'♥ Saved':'♡ Save for later';save.addEventListener('click',()=>{if(saved.has(key))saved.delete(key);else saved.add(key);persist();render();});
- actions.append(apply,save);
- const note=document.createElement('p');note.className='job-disclaimer';note.textContent='Applications are completed on the employer or official job posting website.';
- card.append(h,meta,...detailBlocks,actions,note);el.append(card);
+ const h=document.createElement('h3');const link=document.createElement('a');link.href='?job='+encodeURIComponent(jobKey(j))+'#explore';link.textContent=j.title;link.addEventListener('click',e=>{e.preventDefault();openJob(j);});h.append(link);
+ const company=document.createElement('p');company.textContent=j.company;
+ const summary=document.createElement('div');summary.className='job-meta';
+ [['Location',j.location],['Salary',j.pay||j.salary],['Work arrangement',j.work_arrangement||j.workArrangement]].filter(x=>x[1]).forEach(([k,v])=>{const cell=document.createElement('div');const strong=document.createElement('strong');strong.textContent=k;const span=document.createElement('span');span.textContent=v;cell.append(strong,span);summary.append(cell);});
+ const view=document.createElement('a');view.href=link.href;view.className='apply-now';view.textContent='View job details';view.addEventListener('click',e=>{e.preventDefault();openJob(j);});
+ card.append(h,company,summary,view);el.append(card);
  });
 }
 document.getElementById('searchForm').addEventListener('submit',e=>{e.preventDefault();render();document.getElementById('explore').scrollIntoView({behavior:'smooth'});});

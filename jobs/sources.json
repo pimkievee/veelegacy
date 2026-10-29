@@ -1,0 +1,60 @@
+{
+  "description": "Only enable feeds after confirming the publisher authorizes republishing job summaries and links. Employer-specific board tokens are not credentials.",
+  "sources": [
+    {
+      "id": "maple",
+      "company": "Maple",
+      "provider": "lever",
+      "board_token": "getmaple",
+      "region": "Canada",
+      "approved_for_republication": false,
+      "permission_reference": "",
+      "careers_url": "https://jobs.lever.co/getmaple",
+      "status": "authorization_not_requested"
+    },
+    {
+      "id": "smile-digital-health",
+      "company": "Smile Digital Health",
+      "provider": "lever",
+      "board_token": "smiledigitalhealth",
+      "region": "Canada",
+      "approved_for_republication": false,
+      "permission_reference": "",
+      "careers_url": "https://jobs.lever.co/smiledigitalhealth",
+      "status": "authorization_not_requested"
+    },
+    {
+      "id": "policyme",
+      "company": "PolicyMe",
+      "provider": "lever",
+      "board_token": "policyme",
+      "region": "Canada",
+      "approved_for_republication": false,
+      "permission_reference": "",
+      "careers_url": "https://jobs.lever.co/policyme",
+      "status": "authorization_not_requested"
+    },
+    {
+      "id": "pockethealth",
+      "company": "PocketHealth",
+      "provider": "lever",
+      "board_token": "PocketHealth",
+      "region": "Canada",
+      "approved_for_republication": false,
+      "permission_reference": "",
+      "careers_url": "https://jobs.lever.co/PocketHealth",
+      "status": "authorization_not_requested"
+    },
+    {
+      "id": "caseware",
+      "company": "Caseware",
+      "provider": "lever",
+      "board_token": "caseware",
+      "region": "Canada",
+      "approved_for_republication": false,
+      "permission_reference": "",
+      "careers_url": "https://jobs.lever.co/caseware",
+      "status": "authorization_not_requested"
+    }
+  ]
+}

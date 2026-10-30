@@ -1,4 +1,6 @@
 (()=>{'use strict';
+// Only free Career Hub pages require signup. Shops and other services stay open.
+if(!/^\/jobs(?:\/|$)/i.test(location.pathname))return;
 const KEY='veelegacy-signup-confirmed-v1',PENDING='veelegacy-pending-link-v1';
 const FORM="https://ec80aae0.sibforms.com/v2/serve/MUIFAAthSzszkKU12DJtw6m4wfJEY1XXSrDKQcq_vDZzRgh_SC3xeZyc59qRBo92bf07gjCGvfwtquSrqjUGxYrvzc__RegatGrGzWR0tMKTQcM0wwqPQKnxFKcWB4T-zG-SZnBkNlBh2ErTKm-1pYkKp_rVRDCO-_In6CDZIiNJVD_k0ISIsZ8SmfWYZIPR5OmDB004W7mXm2VUSw==";
 const cookie=()=>document.cookie.split('; ').some(v=>v==='veelegacy_subscribed=yes');

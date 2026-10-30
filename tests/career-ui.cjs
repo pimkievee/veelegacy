@@ -21,3 +21,15 @@ const card=elements.results.children[0],actions=card.children[3],save=actions.ch
 save.onclick();assert.equal(elements.savedCount.textContent,'(1)');
 console.log('Passed category, regional eligibility, expiry, link status, preserved listings, render and save checks');
 for(const match of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g))new vm.Script(match[1]);
+
+const gate=fs.readFileSync('assets/signup-gate.js','utf8');
+for(const pathname of ['/shop/','/shop','/shop/index.html','/contact/','/']){
+ const listeners=[];vm.runInNewContext(gate,{location:{pathname},document:{addEventListener:n=>listeners.push(n)}});
+ assert.equal(listeners.length,0,pathname+' must not require signup');
+}
+for(const pathname of ['/jobs/','/jobs','/jobs/doctors-coming-to-canada/']){
+ const listeners=[];vm.runInNewContext(gate,{location:{pathname},localStorage:{getItem:()=>null},document:{cookie:'',addEventListener:n=>listeners.push(n)},window:{addEventListener(){}}});
+ assert(listeners.includes('click'),pathname+' must keep job signup');
+}
+assert(!fs.readFileSync('shop/index.html','utf8').includes('signup-gate.js'));
+console.log('Passed open shop and preserved Career Hub signup checks');

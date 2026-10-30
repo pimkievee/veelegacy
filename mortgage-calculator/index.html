@@ -62,30 +62,30 @@ header{background:#281631;color:#fff}.nav,.wrap{width:min(1150px,calc(100% - 40p
 </form>
 <section class="results" aria-live="polite" aria-atomic="false">
 <div class="kicker">Estimated mortgage payment</div>
-<div class="heroamt" id="monthly">$—</div>
+<div class="heroamt" id="monthly">Pending</div>
 <p class="lead">Monthly principal + interest, including an estimated financed default-insurance premium where applicable.</p>
 <div class="summary">
 <div class="summary-title">Monthly ownership estimate</div>
-<div class="split"><span>Mortgage payment</span><strong id="mortgageLine">$—</strong></div>
-<div class="split"><span>Property tax</span><strong id="taxLine">$—</strong></div>
-<div class="split"><span>Home insurance</span><strong id="homeInsLine">$—</strong></div>
-<div class="split"><span>Heating and utilities</span><strong id="utilLine">$—</strong></div>
-<div class="split"><span>Condo fees</span><strong id="condoLine">$—</strong></div>
-<div class="split"><span>Maintenance savings</span><strong id="maintLine">$—</strong></div>
-<div class="split total"><span>Estimated monthly housing budget</span><strong id="allIn">$—</strong></div>
+<div class="split"><span>Mortgage payment</span><strong id="mortgageLine">Pending</strong></div>
+<div class="split"><span>Property tax</span><strong id="taxLine">Pending</strong></div>
+<div class="split"><span>Home insurance</span><strong id="homeInsLine">Pending</strong></div>
+<div class="split"><span>Heating and utilities</span><strong id="utilLine">Pending</strong></div>
+<div class="split"><span>Condo fees</span><strong id="condoLine">Pending</strong></div>
+<div class="split"><span>Maintenance savings</span><strong id="maintLine">Pending</strong></div>
+<div class="split total"><span>Estimated monthly housing budget</span><strong id="allIn">Pending</strong></div>
 </div>
 <div class="summary-title">Financing and upfront cash</div>
-<div class="split"><span>Down payment (%)</span><strong id="downPct">—</strong></div>
-<div class="split"><span>Minimum required down payment</span><strong id="minDown">$—</strong></div>
-<div class="split"><span>Mortgage before insurance</span><strong id="baseLoan">$—</strong></div>
-<div class="split"><span>Estimated mortgage default insurance premium</span><strong id="premium">$—</strong></div>
-<div class="split"><span>Estimated financed mortgage balance</span><strong id="totalMortgage">$—</strong></div>
-<div class="split"><span>Insurance premium sales tax due at closing</span><strong id="insTax">$—</strong></div>
-<div class="split total"><span>Estimated cash required at closing</span><strong id="cash">$—</strong></div>
+<div class="split"><span>Down payment (%)</span><strong id="downPct">Pending</strong></div>
+<div class="split"><span>Minimum required down payment</span><strong id="minDown">Pending</strong></div>
+<div class="split"><span>Mortgage before insurance</span><strong id="baseLoan">Pending</strong></div>
+<div class="split"><span>Estimated mortgage default insurance premium</span><strong id="premium">Pending</strong></div>
+<div class="split"><span>Estimated financed mortgage balance</span><strong id="totalMortgage">Pending</strong></div>
+<div class="split"><span>Insurance premium sales tax due at closing</span><strong id="insTax">Pending</strong></div>
+<div class="split total"><span>Estimated cash required at closing</span><strong id="cash">Pending</strong></div>
 <p class="small">Closing cash = down payment + entered land transfer tax + entered other closing costs + estimated sales tax on the insurance premium. Excludes deposits already paid, incentives, rebates not entered, and other unanticipated costs.</p>
 <div id="warning" class="warning" role="status"></div>
 <div class="summary-title" style="margin-top:18px">Income planning snapshot</div>
-<div class="metrics"><div class="metric"><small>Housing ratio (GDS) at contract rate</small><strong id="gds">—</strong><div class="meter"><div id="gdsMeter"></div></div></div><div class="metric"><small>Total-debt ratio (TDS) at contract rate</small><strong id="tds">—</strong><div class="meter"><div id="tdsMeter"></div></div></div></div>
+<div class="metrics"><div class="metric"><small>Housing ratio (GDS) at contract rate</small><strong id="gds">Pending</strong><div class="meter"><div id="gdsMeter"></div></div></div><div class="metric"><small>Total-debt ratio (TDS) at contract rate</small><strong id="tds">Pending</strong><div class="meter"><div id="tdsMeter"></div></div></div></div>
 <p id="stress" class="small" style="margin-top:10px"></p><p class="small">Debt service ratios here use mortgage payment, property tax, heating and half of condo fees; TDS also includes entered debt payments. Actual lender calculations and underwriting rules may differ.</p>
 </section>
 </div>
@@ -106,8 +106,8 @@ header{background:#281631;color:#fff}.nav,.wrap{width:min(1150px,calc(100% - 40p
 const ids=["price","down","rate","years","eligible","premiumTax","income","taxes","insurance","heat","utilities","condo","maintenance","debt","landTransfer","closing"];
 const by=id=>document.getElementById(id);
 const n=id=>{const x=Number(by(id).value);return Number.isFinite(x)?Math.max(0,x):0;};
-const money=x=>Number.isFinite(x)?new Intl.NumberFormat("en-CA",{style:"currency",currency:"CAD",maximumFractionDigits:0}).format(x):"—";
-const percent=x=>Number.isFinite(x)?x.toFixed(1)+"%":"—";
+const money=x=>Number.isFinite(x)?new Intl.NumberFormat("en-CA",{style:"currency",currency:"CAD",maximumFractionDigits:0}).format(x):"Pending";
+const percent=x=>Number.isFinite(x)?x.toFixed(1)+"%":"Pending";
 function mortgagePayment(amount, annualPercent, years){
  if(amount<=0||years<=0)return 0;
  const m=Math.pow(1+annualPercent/200,1/6)-1;const months=years*12;
@@ -136,12 +136,12 @@ function calculate(){
  by("monthly").textContent=money(pay);by("mortgageLine").textContent=money(pay);by("taxLine").textContent=money(monthlyTax);
  by("homeInsLine").textContent=money(homeIns);by("utilLine").textContent=money(heat+utils);
  by("condoLine").textContent=money(condo);by("maintLine").textContent=money(maint);
- by("allIn").textContent=money(all);by("downPct").textContent=price?percent(down/price*100):"—";
+ by("allIn").textContent=money(all);by("downPct").textContent=price?percent(down/price*100):"Pending";
  by("minDown").textContent=money(min);by("baseLoan").textContent=money(base);
- by("premium").textContent=canCalculate?money(premium):"—";
- by("totalMortgage").textContent=canCalculate?money(balance):"—";
- by("insTax").textContent=canCalculate?money(premTax):"—";
- by("cash").textContent=canCalculate?money(upfront):"—";
+ by("premium").textContent=canCalculate?money(premium):"Pending";
+ by("totalMortgage").textContent=canCalculate?money(balance):"Pending";
+ by("insTax").textContent=canCalculate?money(premTax):"Pending";
+ by("cash").textContent=canCalculate?money(upfront):"Pending";
  by("gds").textContent=percent(gds);by("tds").textContent=percent(tds);
  by("gdsMeter").style.width=(Number.isFinite(gds)?Math.min(100,gds/39*100):0)+"%";
  by("tdsMeter").style.width=(Number.isFinite(tds)?Math.min(100,tds/44*100):0)+"%";

@@ -68,9 +68,10 @@ function openJob(j){history.pushState({job:jobKey(j)},'',location.pathname+'?job
 window.addEventListener('popstate',()=>{const dialog=document.getElementById('jobDetailDialog');if(dialog&&dialog.open)dialog.close();render();});
 function clearSelectedJob(){const dialog=document.getElementById('jobDetailDialog');if(dialog&&dialog.open)dialog.close();if(new URLSearchParams(location.search).has('job'))history.replaceState({},'',location.pathname+'#explore');}
 function jobCategory(j){const title=(j.title||'').toLowerCase();if(/scrum|agile|project manager|project management|program manager|business analyst|data analyst|product analyst|product manager|software|developer|devops|cloud|security|cyber|engineer|information technology|data engineer|qa engineer|systems analyst/.test(title))return 'Technology';return j.category==='Project Management'||j.category==='Business Analysis'?'Technology':j.category;}
+function normalizeJobSearch(value){return String(value||'').toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g,' ').trim().replace(/\s+/g,' ');}
 function render(){
- const q=document.getElementById('keyword').value.trim().toLowerCase(),r=document.getElementById('region').value,c=document.getElementById('categoryFilter').value,e=document.getElementById('eligibilityFilter').value;
- const matches=[...jobs,...newTechListings,...communityAndPublicSectorListings,...latestDirectListings,...financeOperationsListings,...expandedEmployerListings,...externalEmployerListings,...detailedVerifiedListings,...verifiedTechListings,...curatedListings()].filter(j=>(!savedOnly||saved.has(jobKey(j)))&&(!q||[j.title,j.company,j.location,j.description].join(' ').toLowerCase().includes(q))&&(!r||j.region===r||r==='Remote'&&/remote/i.test(j.location))&&(!c||jobCategory(j)===c)&&(!e||j.eligibility===e));
+ const q=normalizeJobSearch(document.getElementById('keyword').value),r=document.getElementById('region').value,c=document.getElementById('categoryFilter').value,e=document.getElementById('eligibilityFilter').value;
+ const matches=[...jobs,...newTechListings,...communityAndPublicSectorListings,...latestDirectListings,...financeOperationsListings,...expandedEmployerListings,...externalEmployerListings,...detailedVerifiedListings,...verifiedTechListings,...curatedListings()].filter(j=>(!savedOnly||saved.has(jobKey(j)))&&(!q||normalizeJobSearch([j.title,j.company,j.location,j.description,j.requirements,j.category,j.pay,j.salary].filter(Boolean).join(' ')).includes(q))&&(!r||j.region===r||r==='Remote'&&/remote/i.test(j.location))&&(!c||jobCategory(j)===c)&&(!e||j.eligibility===e));
  const requested=new URLSearchParams(location.search).get('job');if(requested){const selected=[...jobs,...newTechListings,...communityAndPublicSectorListings,...latestDirectListings,...financeOperationsListings,...expandedEmployerListings,...externalEmployerListings,...detailedVerifiedListings,...verifiedTechListings,...curatedListings()].find(j=>jobKey(j)===requested);if(selected){showJobDetail(selected);return;}}
  const dialog=document.getElementById('jobDetailDialog');if(dialog&&dialog.open)dialog.close();
  const sort=document.getElementById('sortJobs').value;
@@ -90,7 +91,8 @@ function render(){
  card.append(h,company,summary,view);el.append(card);
  });
 }
-document.getElementById('searchForm').addEventListener('submit',e=>{e.preventDefault();clearSelectedJob();render();document.getElementById('explore').scrollIntoView({behavior:'instant',block:'start'});});
+document.getElementById('searchForm').addEventListener('submit',e=>{e.preventDefault();savedOnly=false;document.getElementById('categoryFilter').value='';document.getElementById('eligibilityFilter').value='';clearSelectedJob();render();document.getElementById('explore').scrollIntoView({behavior:'instant',block:'start'});});
+document.getElementById('keyword').addEventListener('input',()=>{savedOnly=false;render();});
 document.querySelectorAll('.filters select').forEach(el=>el.addEventListener('change',()=>{clearSelectedJob();render();}));
 document.getElementById('sortJobs').addEventListener('change',()=>{clearSelectedJob();render();});
 document.getElementById('allJobs').addEventListener('click',()=>{savedOnly=false;clearSelectedJob();render();document.getElementById('explore').scrollIntoView({behavior:'instant',block:'start'});});

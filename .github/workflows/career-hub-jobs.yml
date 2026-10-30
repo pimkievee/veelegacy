@@ -5,6 +5,8 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  pages: write
+  id-token: write
 concurrency:
   group: career-hub-jobs
   cancel-in-progress: false
@@ -21,16 +23,23 @@ jobs:
           python-version: '3.12'
       - name: Run importer tests
         run: python -m unittest discover -s tests -v
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check Career Hub filters and saved jobs
+        run: node tests/career-ui.cjs
       - name: Import approved job feeds
         id: import
         continue-on-error: true
         run: python scripts/update_jobs.py
+      - name: Check curated application links
+        run: python scripts/check_job_links.py
       - name: Commit updated job data
         run: |
-          if ! git diff --quiet -- jobs/jobs.json; then
+          if ! git diff --quiet -- jobs/jobs.json jobs/job-status.json; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add jobs/jobs.json
+            git add jobs/jobs.json jobs/job-status.json
             git commit -m "Update Career Hub job listings"
             git push origin HEAD:main
           fi
@@ -39,3 +48,22 @@ jobs:
         run: |
           echo "One or more feeds failed. Expired listings were still cleaned up." >&2
           exit 1
+
+  publish:
+    needs: update
+    if: always() && needs.update.result == 'success'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Publish checked job data
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,23 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const html=fs.readFileSync('jobs/index.html','utf8');
+const source=html.split('<script>')[1].split("document.getElementById('searchForm').addEventListener")[0];
+const node=()=>({value:'',textContent:'',children:[],setAttribute(){},addEventListener(){},append(...a){this.children.push(...a)},replaceChildren(){this.children=[]},querySelector(){return null}});
+const elements={};const ctx={document:{getElementById:id=>elements[id]||(elements[id]=node()),querySelectorAll:()=>[],createElement:node},localStorage:{getItem:()=>null,setItem(){}},Date,URLSearchParams,location:{search:'',pathname:'/jobs/'},window:{addEventListener(){}},history:{}};
+vm.createContext(ctx);vm.runInContext(source,ctx);
+vm.runInContext(`
+if(jobCategory({title:'Administrative Assistant'})!=='Administrative')throw Error('admin filter');
+if(jobCategory({title:'Business Systems Analyst'})!=='Business Analysis')throw Error('analyst filter');
+if(jobCategory({title:'Scrum Master'})!=='Project Management')throw Error('project filter');
+if(!matchesRegion({location:'Remote',remote_scope:'Worldwide'},'Africa'))throw Error('worldwide Africa');
+if(matchesRegion({location:'Remote, United States',region:'United States'},'Worldwide'))throw Error('US restriction');
+if(available({expires_at:'2020-01-01'}))throw Error('expired visible');
+jobChecks={'https://example.com':{status:'closed'}};
+if(available({url:'https://example.com'}))throw Error('closed visible');
+if(!allListings().some(j=>j.company==='Bayshore HealthCare'))throw Error('Bayshore lost');
+render();
+`,ctx);
+assert(elements.results.children.length>50);
+const card=elements.results.children[0],actions=card.children[3],save=actions.children[1];
+save.onclick();assert.equal(elements.savedCount.textContent,'(1)');
+console.log('Passed category, regional eligibility, expiry, link status, preserved listings, render and save checks');
+for(const match of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g))new vm.Script(match[1]);

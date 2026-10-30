@@ -64,7 +64,7 @@ function showJobDetail(j){
  detail('Schedule',j.schedule);
  detail('Start date',j.start_date);
  detail('Number of vacancies',j.vacancies);
- detail('Closing date',j.expires_at||j.deadline);
+ detail('Closing date',j.deadline||(j.expires_at?new Date(j.expires_at).toLocaleDateString('en-CA',{year:'numeric',month:'long',day:'numeric',timeZone:'America/Toronto'}):''));
  detail('Job overview',j.description);
  detail('Education',j.education);
  detail('Experience',j.experience);

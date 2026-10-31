@@ -1,569 +1,569 @@
 {
-  "updated_at": "2026-10-30T17:37:22.035512Z",
+  "updated_at": "2026-10-31T15:46:51.562042Z",
   "jobs": {
     "https://job-boards.greenhouse.io/capco/jobs/8279909": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/stackadapt/jobs/4470989009": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/practicebetter/jobs/5423969008": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/localcoin/jobs/6222799004": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/sureify/jobs/5170323008": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/maintainx/fe3f938a-3d39-41df-b0ed-1510a6fb0ef1": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/sanity/01b3e311-43a1-49fd-8fb8-3587881e5316": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.lever.co/megaport/77430cbc-692b-4732-8260-b3f8b11d0489": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/authzed/21eac6be-fca2-4937-b308-94da334a8a72": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/workos/cff5a16f-fd1c-4b64-9b66-8a8321122375": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/chainlink-labs/315a14f4-30b1-47c6-a1e7-8dfa9fe67f67": {
       "status": "closed",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://bayshore.taleo.net/careersection/bs_ex/jobdetail.ftl?job=523149": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://bayshore.taleo.net/careersection/bs_ex/jobdetail.ftl?job=26005390": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://bayshore.taleo.net/careersection/bs_mobile/jobdetail.ftl?job=26005564": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/canadavisa/5f189396-cf65-46bf-883c-b877f5f61176": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.lever.co/altaml/332a2a6e-cd50-4d2a-b7c8-4d6390f6ce1d": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/elevenlabs/e5c45832-a952-4584-9874-25580b5b4993": {
       "status": "closed",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/Dominion%20Dynamics/b5778dd8-a0cb-4bc8-b150-761529feacf9/": {
       "status": "closed",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.lever.co/jobgether/0f7cffa0-e979-41a2-8bad-283bf142fc90": {
       "status": "closed",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.lever.co/newton/9a51fd25-da2d-4323-baa9-2b4770426f2d": {
       "status": "closed",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.lever.co/newton/3a0bac3a-c907-4ba5-b6a4-b795b054bfbf": {
       "status": "closed",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.lever.co/terawattinfrastructure/154f6dda-b384-4cfa-b86c-643f1cc37306": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.lever.co/bounteous/d4209c98-7a58-4d04-a185-73ee50d5c6fc": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.lever.co/magnetforensics/efd7e6e1-2cde-4010-8b75-b9500cfdf748": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.lever.co/shyftlabs/477f2323-f909-4e59-8fd8-915932d67454": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/stackadapt/jobs/4312807009": {
       "status": "closed",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/camunda/ae101c99-ef04-4317-bf78-da18d61dcda4/": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/kraken.com/0e4b08e7-ce05-42e6-950a-854d18946ca7": {
       "status": "closed",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/Dominion%20Dynamics/cd4a2307-d14f-4927-b4a4-e383462e44df": {
       "status": "closed",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/cerebras/ae5daf29-d7d0-440e-b41f-c6f0a67489f3": {
       "status": "closed",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/kong/3fd05ac3-b247-4d01-abb8-5deeef000347/": {
       "status": "closed",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/cohere/8b6696e1-f1c4-4010-bde9-3cec1340a2a6": {
       "status": "closed",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.lever.co/jobgether/eaca05de-95a5-4eef-8056-0c71acfd30b5": {
       "status": "closed",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.lever.co/jobgether/f9742c2b-f748-4834-b62d-9825661c0608": {
       "status": "closed",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/dentalook/jobs/5215676007": {
       "status": "closed",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/oscilar/41bf0f36-fc46-4bad-940b-58ca82b09989": {
       "status": "closed",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/chainlink-labs/4db38200-ad51-41ba-9150-f0507fe0922d": {
       "status": "closed",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/AeroVect/21e61d2f-344e-4eb6-9199-7d2aefe732ba": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/solink/30cc300b-9f33-4e90-abe8-b52ca20e72ff": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/hopper/12f624c4-8f17-441a-81b3-4202bf40a85c/": {
       "status": "closed",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/spellbook.com/4b0deab9-5fd3-445b-bbe8-d3d70db8ec48": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/wrapbook/9c7490a0-3d81-45d2-8257-414457d6509d": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/solink/0929f5fa-99cf-499d-894f-6a495f134dfc": {
       "status": "closed",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/loopio/4368f712-9ff0-4c88-bcee-744839226074": {
       "status": "closed",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/passage/84b2a491-70ac-41a4-80db-f3c044aa991d": {
       "status": "closed",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/solink/6c338352-790d-49c2-83dc-0e29b548bb4b": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/super.com/5c3f818b-c27e-48a8-88f8-3898a5d4a96b": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/jane/5afa9ff4-20b6-4a3c-91d3-54e2785d815e": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/meshy/f7b1757c-477c-4e1d-b48c-c1248964e2f0": {
       "status": "closed",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/procurify/788f3528-ecdd-48a5-8bb1-34bc571dba45/": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/clipboard/d43bf22d-8219-4265-b061-87aab63d13e9/": {
-      "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "status": "closed",
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/tailscale/jobs/4728969005": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/tailscale/jobs/4731033005": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/riversidenaturalfoodsltd/jobs/5123936008": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/cyclicmaterialsinc/jobs/4372973009": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/faire/jobs/8870788002": {
-      "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "status": "unknown",
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/gitlab/jobs/8869167002": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/tailscale/jobs/4721713005": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/grafanalabs/jobs/6230154004": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/affirm/jobs/8017505003": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/Felix/6eab0e9a-4619-4627-ace8-ed324ea13628": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/miovision/84e78306-eb61-4397-b1d8-d54dfe4ee764": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/monarchmoney/f5c89e05-32ea-467b-a091-29c796c21639": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://www.jobbank.gc.ca/jobsearch/jobposting/50559743?source=searchresults": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/conga/jobs/5182918007": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://apply.workable.com/tecsys/j/D17E303181/": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.smartrecruiters.com/SpectrumHealthCare/744000085387040-psw-hsw-live-in": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://srtmedstaff.applytojob.com/apply/bhyF0EM0T0/Community-Personal-Support-Worker-PSW": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.smartrecruiters.com/wcginternationalconsultantsltd/3743990015020931-employment-consultant": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.smartrecruiters.com/wcginternationalconsultantsltd/3743990015765871": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.toronto.ca/jobsatcity/job/Toronto-ADMINISTRATIVE-ASSISTANT-1-ON-M/607515617/": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.toronto.ca/jobsatcity/job/Toronto-ADMINISTRATIVE-ASSISTANT-2-ON-M5H-2N2/607301617/": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.smartrecruiters.com/FLINTCorp1/3743990015798016-journeyperson-electrician": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.smartrecruiters.com/Dexterra/744000141516255-facility-electrician": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/keplergroup/jobs/8201321": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/staffbase/jobs/8861814002": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.smartrecruiters.com/HaltonHealthcare1/3743990016435596-registered-practical-nurse-": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.smartrecruiters.com/HaltonHealthcare1/3743990016432266-registered-nurse": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.smartrecruiters.com/HaltonHealthcare1/3743990016435956-registered-nurse-program-based-float-pool-emergency-program": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://careers.lakeridgehealth.on.ca/erecruit/VacancyDetail.aspx?VacancyUID=000000053928": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://careers.lakeridgehealth.on.ca/erecruit/VacancyDetail.aspx?VacancyUID=000000054220": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://careers.lakeridgehealth.on.ca/erecruit/VacancyDetail.aspx?VacancyUID=000000053880": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://careers.lakeridgehealth.on.ca/erecruit/VacancyDetail.aspx?VacancyUID=000000053687": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://careers.lakeridgehealth.on.ca/erecruit/VacancyDetail.aspx?VacancyUID=000000053490": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://careers.albertahealthservices.ca/jobs/registered-nurse-601091": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://careers.albertahealthservices.ca/jobs/registered-nurse-601092": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://careers.albertahealthservices.ca/jobs/registered-nurse-emergency-department-601094": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://careers.albertahealthservices.ca/jobs/nurse-practitioner-593887": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://careers.albertahealthservices.ca/jobs/registered-nurse-601099": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://careers.albertahealthservices.ca/jobs/registered-nurse-601100": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://careers.albertahealthservices.ca/jobs/registered-nurse-601102": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://careers.albertahealthservices.ca/jobs/registered-nurse-601136": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://careers.albertahealthservices.ca/jobs/registered-nurse-599753": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://careers.albertahealthservices.ca/jobs/registered-nurse-600843": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://careers.albertahealthservices.ca/jobs/licensed-practical-nurse-600828": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://careers.albertahealthservices.ca/jobs/licensed-practical-nurse-600923": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.smartrecruiters.com/UniversityHealthNetwork/744000158345564-clinical-nurse-specialist-cancer-prevention-and-interception-clinic-": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.smartrecruiters.com/UniversityHealthNetwork/744000156806457-clinical-nurse-specialist-psychosocial-oncology": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://careers.kensingtonhealth.org/jobs/728070-registered-nurse-operating-room-or": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.smartrecruiters.com/HaltonHealthcare1/3743990016435526-registered-practical-nurse-": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.smartrecruiters.com/WilliamOslerHealthSystem1/744000157218309-registered-nurse-multiple-sites-clinical-resource-team-women-s-and-children-s-program": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/capco/jobs/8335337": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/capco/jobs/8265693": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/capco/jobs/8178768": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/capco/jobs/8258846": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/capco/jobs/8186647": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/opentable/jobs/8769603002": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/tubi-canada/jobs/8186812": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://careers.deloitte.ca/job/Toronto%2C-ON-Senior-DevOps-Blockchain-Infrastructure-Engineer-Operate-ON-M5H-0A9/134689-en_US/": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/canonical/jobs/3737190": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/canonical/jobs/3029798": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/canonical/jobs/6635593": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/canonical/jobs/5703396": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/canonical/jobs/2166631": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/canonical/jobs/6222476": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/canonical/jobs/3433732": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/canonical/jobs/4676649": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/customerio/jobs/7778291": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/clickhouse/086c4dd1-217d-48f8-9d62-e57542e16dbe": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/clipboard/8f01008d-a05a-4fcc-873d-83175e2c70ba/": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.lever.co/assist-world/b75c51c4-5817-46cb-90d1-593cc759862c": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://apply.workable.com/remote-recruitment/j/651996DA12": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/prelim/54d94ecf-7f9d-47ea-9762-2270be003dbc": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/clair/0b83fc4d-2461-44ce-887d-49a7baf17d38": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.ashbyhq.com/Chromatic/cecaa6a1-f2c6-4ad7-89c8-2c699af7c202": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/arizeai/jobs/6203635004": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/turbineone/jobs/5389687008": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.lever.co/lyrahealth/9cb5c833-0c95-4983-8125-de15665872b8": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/twilio/jobs/8026207": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.smartrecruiters.com/UniversityHealthNetwork/744000156829421-administrative-assistant-ii": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.smartrecruiters.com/UniversityHealthNetwork/744000156851649-administrative-assistant-iii": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://careers-peelregion.icims.com/jobs/16041/administrative-assistant-to-the-manager,-logistics/job": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.utoronto.ca/job/Toronto-Administrative-Coordinator,-Academic-Reviews-ON/607344817/": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://jobs.utoronto.ca/job/Toronto-Housing-Assistant-(Term)-ON/607356817/": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://www.canada.ca/en/security-intelligence-service/corporate/csis-jobs/available-jobs/administrative-assistant.html": {
-      "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "status": "unknown",
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/autotradercanada/jobs/8047323003": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/harborglobal/jobs/5225001007": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://www.form3.tech/company/vacancies/8425540002/senior-business-analyst-us-payments": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/exadelinc/jobs/6209509004": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/capco/jobs/8095004": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     },
     "https://job-boards.greenhouse.io/capco/jobs/8110277": {
       "status": "reachable",
-      "checked_at": "2026-10-30T17:37:22.035512Z"
+      "checked_at": "2026-10-31T15:46:51.562042Z"
     }
   }
 }
